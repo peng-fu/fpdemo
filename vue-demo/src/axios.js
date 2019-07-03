@@ -4,10 +4,11 @@
 import axios from 'axios';
 // import { Toast } from 'vant';
 import store from './store'
+import qs from 'qs';
 
 // 环境的切换
 if (process.env.NODE_ENV == 'development') {    
-    axios.defaults.baseURL = 'http://localhost:8080/';
+    axios.defaults.baseURL = 'http://localhost:3000/';
 } else if (process.env.NODE_ENV == 'debug') {    
     axios.defaults.baseURL = '';
 } else if (process.env.NODE_ENV == 'production') {    
@@ -125,7 +126,7 @@ export function get(url, params){
  */
 export function post(url, params) {    
     return new Promise((resolve, reject) => {         
-        axios.post(url,(params))        
+        axios.post(url, qs.stringify(params))     
         .then(res => {            
             resolve(res.data);        
         })        

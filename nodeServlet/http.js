@@ -28,12 +28,17 @@ var result = {
 app.get('/user', function(req, res) {
     console.log("收到get请求")
 	console.log(data.udata);
-	res.send(JSON.stringify(data.udata));
+	result.data = data.udata;
+	res.send(JSON.stringify(result));
 })
 
-app.post("/",(req,res) => {
+app.post("/*",(req,res) => {
 	//获取post传参
-	let name = req.body.name
+	console.log("收到post请求")
+	let name = req.body.name;
+	console.log(name);
+	result.data = data.udata;
+	res.send(JSON.stringify(result));
 })
 
-app.listen(8080, 'localhost');
+app.listen(3000, 'localhost');

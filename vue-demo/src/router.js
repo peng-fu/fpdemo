@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Login from "./components/login/login";
+import Home from "./components/page/home";
 
 import store from "./store"
 
@@ -12,8 +13,8 @@ const router = new Router({
   routes: [
     {
       path: "/",
-      name: "login",
-      component: Login
+      name: "Home",
+      component: Home
     },
 
     
