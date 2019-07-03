@@ -5,8 +5,7 @@ import store from "./store";
 
 import './plugins/element.js';
 import './assets/lib/commonJS.js'
-import axios from 'axios'
-Vue.prototype.$axios = axios
+import './axios.js'
 Vue.config.productionTip = false;
 
 new Vue({

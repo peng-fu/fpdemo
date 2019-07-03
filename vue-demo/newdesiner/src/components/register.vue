@@ -24,52 +24,47 @@ export default {
     return {
       username: undefined,
       password: undefined,
-      confirmpassd:undefined,
-      userphone:undefined,
-      useremail:undefined
+      confirmpassd: undefined,
+      userphone: undefined,
+      useremail: undefined
     };
   },
-  methods:{
-      registerFun(){
-        if(!this.username){
-          this.errorAlert('请输入用户名') 
-          return;
-        }
-        if(!this.password){
-          this.errorAlert('请输入密码') 
-          return;
-        }
-        if(!this.confirmpassd){
-          this.errorAlert('请输入二次密码') 
-          return;
-        }
-        if(this.password !== this.confirmpassd){
-          this.errorAlert('密码不一致') 
-          return;
-        }
-        if(!this.userphone){
-          this.errorAlert('请输入用户手机号') 
-          return;
-        }
-        if(!this.useremail){
-          this.errorAlert('请输入用户邮箱') 
-          return;
-        }
-        this.$axios({
-            method:'post',
-            url:'http://192.168.86.234:8080/user/register',
-            params:{
-                username:this.username,
-                userpassword:this.password,
-                userphone:this.userphone,
-                useremail:this.useremail
-            }
-        }).then(res=>{
-            console.log(res)
-        }).catch(err=>{
-            console.log(err)
-        })
+  methods: {
+    registerFun() {
+      if (!this.username) {
+        this.errorAlert("请输入用户名");
+        return;
       }
+      if (!this.password) {
+        this.errorAlert("请输入密码");
+        return;
+      }
+      if (!this.confirmpassd) {
+        this.errorAlert("请输入二次密码");
+        return;
+      }
+      if (this.password !== this.confirmpassd) {
+        this.errorAlert("密码不一致");
+        return;
+      }
+      if (!this.userphone) {
+        this.errorAlert("请输入用户手机号");
+        return;
+      }
+      if (!this.useremail) {
+        this.errorAlert("请输入用户邮箱");
+        return;
+      }
+      let dataobj = {
+        username: this.username,
+        userpassword: this.password,
+        userphone: this.userphone,
+        useremail: this.useremail
+      };
+      this.$Reqpost("/user/register",dataobj).then(res=>{
+          console.log(res)
+      });
+    }
   }
 };
 </script>
@@ -96,7 +91,7 @@ export default {
   font-weight: 600;
   color: #2d8cf0;
 }
-.rigistorforget span{
-    cursor: pointer;
+.rigistorforget span {
+  cursor: pointer;
 }
 </style>

@@ -8,7 +8,17 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/",
+      path:'/',
+      name:'index',
+      component:() =>  import('./views/index.vue'),
+    },
+    {
+      path:'/index',
+      name:'index',
+      component:() =>  import('./views/index.vue'),
+    },
+    {
+      path: "/userlogin",
       name: "logineMain",
       component:() => import('./views/loginMain.vue'),
       redirect:'/login',

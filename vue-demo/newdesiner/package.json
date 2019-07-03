@@ -28,6 +28,7 @@
     "iview": "^3.4.2",
     "less": "^2.7.3",
     "less-loader": "^4.0.6",
+    "qs": "^6.7.0",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-cli-plugin-iview": "^1.0.6",
     "vue-template-compiler": "^2.6.10"
