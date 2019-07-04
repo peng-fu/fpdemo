@@ -11,24 +11,8 @@
 export default {
   data() {
     return {
-      data: undefined,
     };
   },
-  methods: {
-    getData() {
-      this.$axios
-        .get("http://jsonplaceholder.typicode.com/posts")
-        .then(res => {
-          console.log(res);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    },
-    loginFun(){
-
-    }
-  }
 };
 </script>
 <style>

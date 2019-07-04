@@ -62,7 +62,14 @@ export default {
         useremail: this.useremail
       };
       this.$Reqpost("/user/register",dataobj).then(res=>{
-          console.log(res)
+        if(res.code == 200){
+           this.successAlert('注册成功')
+           setTimeout(()=>{
+               this.$router.push({path:'/index'})
+           },1000)
+        }else{
+            this.errorAlert('注册失败')
+        }
       });
     }
   }

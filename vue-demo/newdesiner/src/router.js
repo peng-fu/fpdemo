@@ -10,15 +10,33 @@ export default new Router({
     {
       path:'/',
       name:'index',
-      component:() =>  import('./views/index.vue'),
+      component:() =>  import('./views/mainPage.vue'),
     },
     {
       path:'/index',
       name:'index',
-      component:() =>  import('./views/index.vue'),
+      component:() =>  import('./views/mainPage.vue'),
+      redirect:'/index',
+      children:[
+        {
+          path:'/index',
+          name:'index',
+          component:() =>  import('./components/index.vue'),
+        },
+        {
+          path:'/addarticle',
+          name:'addarticle',
+          component:() =>  import('./components/addingArticles.vue'),
+        },
+        {
+          path:'/myarticles',
+          name:'myarticles',
+          component:() =>  import('./components/myArticles.vue'),
+        },
+      ]
     },
     {
-      path: "/userlogin",
+      path: "/login",
       name: "logineMain",
       component:() => import('./views/loginMain.vue'),
       redirect:'/login',

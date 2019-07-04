@@ -1,7 +1,6 @@
 <template>
     <div>
-       首页
-       <Button type="success" @click="$router.push({path:'/userlogin'})">登录</Button>
+        添加文章
     </div>
 </template>
 <script>
@@ -12,5 +11,5 @@ export default {
    },
 }
 </script>
-<style>
+<style lang="less" scoped>
 </style>

@@ -35,7 +35,6 @@ export default {
         userpassword: this.password,
       };
       this.$Reqpost("/user/login",dataobj).then(res=>{
-        let result = res
         if(res.code == 200){
            this.successAlert('登录成功')
            setTimeout(()=>{
