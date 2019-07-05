@@ -2,11 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-// import axios from "./axios";
-// import VueAxios from "vue-axios";
 import "../public/reset.css";
 import './plugins/iview.js'
-// Vue.use(VueAxios, axios);
+import "./axios"
 
 Vue.config.productionTip = false;
 
