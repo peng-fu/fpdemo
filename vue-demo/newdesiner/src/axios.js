@@ -18,7 +18,7 @@ if (process.env.NODE_ENV == 'development') {
 
 // 请求超时时间
 axios.defaults.timeout = 10000;
-
+axios.defaults.withCredentials = true; //使用axios发送请求时，每次会话携带cookie
 // post请求头
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 
@@ -126,12 +126,12 @@ export function get(url, params) {
  * @param {String} url [请求的url地址] 
  * @param {Object} params [请求时携带的参数] 
  */
-Vue.prototype.$Reqpost =  function post(url, params) {
+Vue.prototype.$Reqpost =  function post(url, params={}) {
     return new Promise(function (resolve, reject){
         let promise = axios({
             url:url,
             method:'POST',
-            data:Qs.stringify(params,{ indices: false })
+            data:Qs.stringify(params,{ indices: false }),
         })
         promise.then(res=>{
             resolve(res.data)

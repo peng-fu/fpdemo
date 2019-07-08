@@ -4,25 +4,31 @@
       <div class="tabcontent">
         <div class="tabbaer_leftdiv">
           <img src="@/assets/image/LOgo.png" alt />
-          <!-- <ul class="topul">
-            <li
-              :class="tabercurrent == index?'tabercurrentstyle':''"
-              v-for="(taberitem ,index) in tabbarList"
-              :key="index"
-              @click="chencktaber(index,taberitem.path)"
-            >{{taberitem.name}}</li>
-          </ul>-->
           <Menu mode="horizontal"  active-name="1">
-            <MenuItem :name="`${index+1}`" v-for="(taberitem ,index) in tabbarList" :key="index" @click.native="chencktaber(index,taberitem.path)">
-              {{taberitem.name}}
-            </MenuItem>
+            <MenuItem name="1" @click.native="chencktaber('/index')">首页</MenuItem>
+            <MenuItem v-show="$store.state.userinfo.username" name="2" @click.native="chencktaber('/addarticle')">添加文章</MenuItem>
+            <MenuItem v-show="$store.state.userinfo.username" name="3" @click.native="chencktaber('/myarticles')">我的文章</MenuItem>
+            <MenuItem name="4">技术文章</MenuItem>
+            <MenuItem name="5">程序员人生</MenuItem>
+            <MenuItem name="6">关于博客</MenuItem>
           </Menu>
         </div>
         <div class="login_registdiv">
-          <p>
-            <span>登录</span>
-            <span>注册</span>
+          <p v-if="!$store.state.userinfo.username">
+            <span @click="$router.push({path:'/login'})">登录</span>
+            <span @click="$router.push({path:'/register'})">注册</span>
           </p>
+          <Dropdown v-else>
+              <a href="javascript:void(0)">
+                  {{$store.state.userinfo.username}}
+                  <Icon type="ios-arrow-down"></Icon>
+              </a>
+              <DropdownMenu slot="list">
+                  <!-- <DropdownItem>{{$store.state.userinfo.userphone}}</DropdownItem>
+                  <DropdownItem>{{$store.state.userinfo.useremail}}</DropdownItem> -->
+                  <DropdownItem @click.native="Logout()">退出登录</DropdownItem>
+              </DropdownMenu>
+          </Dropdown>
         </div>
       </div>
     </div>
@@ -42,25 +48,53 @@
   </div>
 </template>
 <script>
+import { setTimeout } from 'timers';
 export default {
   data() {
     return {
-      tabbarList: [
-        { name: "首页", path: "/index" },
-        { name: "添加文章", path: "/addarticle" },
-        { name: "我的文章", path: "/myarticles" },
-        { name: "技术文章", path: "/index" },
-        { name: "程序员人生", path: "/index" },
-        { name: "关于博客", path: "/index" }
-      ], //头部导航列表
-      tabercurrent: -1 //当前被选中的tab选项
     };
   },
   methods: {
-    chencktaber(index, pagepath) {
-      this.tabercurrent = index;
+    chencktaber(pagepath) {
       this.$router.push({ path: pagepath });
+    },
+    //退出登录
+    Logout(){
+      this.$Reqpost('/user/signoutlogin').then(res=>{
+        if(res.code == 200){
+          this.successAlert('退出成功')
+          this.$store.dispatch('reqClearUserinfo')
+            this.$router.push({path:'/index'})
+          // setTimeout(()=>{
+            
+          // },1500)
+        }
+      }).catch(err=>{console.log(err)})
+    },
+    //获取用户信息
+    getUserinformation(){
+      if(!this.$store.state.userinfo.username){
+        this.$Reqpost('/user/getuserinfo').then(res=>{
+          console.log(res)
+          if(res.code == 200){
+            let resData = {}
+            resData = res.data
+            let userinfo = {
+              username:resData.username,
+              userphone:resData.userphone,
+              useremail:resData.useremail,
+              times:new Date().getTime()
+            }
+            this.$store.dispatch('reqSaveUserinfo',resData)
+          }
+        }).catch(err=>{
+          console.log(err)
+        })
+      }
     }
+  },
+  created(){
+    this.getUserinformation()
   }
 };
 </script>
@@ -102,7 +136,7 @@ export default {
 }
 .tabbaer_leftdiv .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active{
    color: white;
-   border-bottom: 2px solid #2d8cf0;
+   border-bottom: 2px solid #009a61;
 }
 .tabbaer_leftdiv .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu{color: white;}
 .tabcontent img {
@@ -139,10 +173,13 @@ export default {
 .login_registdiv p span:last-child {
   margin-left: 30px;
 }
-
+.login_registdiv .ivu-dropdown-rel a{
+  color:white;
+  font-size: 15px;
+}
 /*  主要内容 */
 .mainContein {
-  min-height: 869px;
+  min-height: 829px;
   margin: 20px 0;
 }
 .maindiv {

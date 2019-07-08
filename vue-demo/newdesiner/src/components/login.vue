@@ -21,7 +21,7 @@ export default {
     };
   },
   methods: {
-    loginFun() {
+    async loginFun() {
       if (!this.username) {
         this.errorAlert("请输入用户名");
         return;
@@ -36,18 +36,31 @@ export default {
       };
       this.$Reqpost("/user/login",dataobj).then(res=>{
         if(res.code == 200){
-           this.successAlert('登录成功')
-           setTimeout(()=>{
-               this.$router.push({path:'/index'})
-           },1000)
+          this.successAlert('登录成功')
+          this.getUserinfo()
+          setTimeout(()=>{
+            this.$router.push({path:'/index'})
+          },2000)
         }else{
             this.errorAlert('登录失败')
         }
       }).catch(err=>{
           console.log(err)
       });
+    },
+    getUserinfo(){
+      this.$Reqpost('/user/getuserinfo').then(res=>{
+        console.log(res)
+        if(res.code == 200){
+          let resData = {}
+          resData = res.data
+          this.$store.dispatch('reqSaveUserinfo',resData)
+        }
+      }).catch(err=>{
+        console.log(err)
+      })
     }
-  }
+  },
 };
 </script>
 <style>

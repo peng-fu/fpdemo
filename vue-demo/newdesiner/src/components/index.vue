@@ -1,11 +1,5 @@
 <template>
   <div class="index_page">
-    <!-- 分类 -->
-    <!-- <div class="left_classify">
-            <ul>
-                <li v-for="(leftitem , index) in leftclassifylist" :key="index">{{leftitem.name}}</li>
-            </ul>
-    </div>-->
     <Sider breakpoint="md">
       <Menu active-name="1-1" width="auto">
         <MenuItem
@@ -22,11 +16,6 @@
     <!-- 右边主要内容 -->
     <div class="right_maindiv">
       <Carousel autoplay v-if="currentclassify === 0">
-        <Carousel-item>
-          <div class="demo-carousel">
-            <img src="@/assets/image/slide1.jpg" alt />
-          </div>
-        </Carousel-item>
         <Carousel-item>
           <div class="demo-carousel">
             <img src="@/assets/image/slide2.jpg" alt />
@@ -94,6 +83,9 @@ export default {
     checkClassify(index) {
       this.currentclassify = index;
     }
+  },
+  created(){
+    console.log(this.leftclassifylist)
   }
 };
 </script>
@@ -117,7 +109,7 @@ export default {
 }
 .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
   color: #f7f7f7;
-  background: #2d8cf0;
+  background: #009a61;
   z-index: 2;
 }
 .ivu-carousel-list{
@@ -128,7 +120,7 @@ export default {
   width: 100%;
 }
 .ivu-carousel-dots li button {
-  background: #409eff;
+  background: #009a61;
 }
 .ivu-layout-sider-children{
     box-shadow: 2px 4px 10px 0 rgba(0,0,0,.16);
