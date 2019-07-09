@@ -1,0 +1,65 @@
+16:52:53 INFO  - Starting TrainApplication on GAIA-Develop with PID 924 (Z:\Desktop\train\Train\target\classes started by GAIA in Z:\Desktop\train\Train)
+16:52:53 DEBUG - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+16:52:53 INFO  - No active profile set, falling back to default profiles: default
+16:52:55 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\BlogTableMapper.class]
+16:52:55 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\CommentTableMapper.class]
+16:52:55 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\UserTableMapper.class]
+16:52:55 DEBUG - Creating MapperFactoryBean with name 'blogTableMapper' and 'com.gaia.dao.BlogTableMapper' mapperInterface
+16:52:55 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'blogTableMapper'.
+16:52:55 DEBUG - Creating MapperFactoryBean with name 'commentTableMapper' and 'com.gaia.dao.CommentTableMapper' mapperInterface
+16:52:55 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'commentTableMapper'.
+16:52:55 DEBUG - Creating MapperFactoryBean with name 'userTableMapper' and 'com.gaia.dao.UserTableMapper' mapperInterface
+16:52:55 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'userTableMapper'.
+16:52:56 INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+16:52:56 INFO  - Starting service [Tomcat]
+16:52:56 INFO  - Starting Servlet Engine: Apache Tomcat/8.5.31
+16:52:56 INFO  - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\； C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32;C:\Users\GAIA\node_modules\.bin;C:\Program Files\nodejs\;C:\app\mysql\mysql-5.7.26-winx64\bin;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\;C:\app\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\GAIA\AppData\Roaming\npm;C:\Users\GAIA\AppData\Local\GitHubDesktop\bin;C:\app\apache-maven-3.6.0\bin;C:\app\eclipsse\Eclipse-JEE-Oxygen-R-win32-x86_64\eclipse;;.]
+16:52:56 INFO  - Initializing Spring embedded WebApplicationContext
+16:52:57 DEBUG - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+16:52:57 DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:52:57 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\BlogTableMapper.xml]'
+16:52:57 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\CommentTableMapper.xml]'
+16:52:57 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\UserTableMapper.xml]'
+16:52:58 DEBUG - Using SLF4J as the default logging framework
+16:52:58 DEBUG - -Dio.netty.eventLoopThreads: 3
+16:52:58 DEBUG - -Dio.netty.leakDetection.level: simple
+16:52:58 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+16:52:59 DEBUG - Platform: Windows
+16:52:59 DEBUG - -Dio.netty.noUnsafe: false
+16:52:59 DEBUG - Java version: 8
+16:52:59 DEBUG - sun.misc.Unsafe.theUnsafe: available
+16:52:59 DEBUG - sun.misc.Unsafe.copyMemory: available
+16:52:59 DEBUG - java.nio.Buffer.address: available
+16:52:59 DEBUG - direct buffer constructor: available
+16:52:59 DEBUG - java.nio.Bits.unaligned: available, true
+16:52:59 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+16:52:59 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+16:52:59 DEBUG - sun.misc.Unsafe: available
+16:52:59 DEBUG - -Dio.netty.tmpdir: C:\Users\GAIA\AppData\Local\Temp (java.io.tmpdir)
+16:52:59 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:52:59 DEBUG - -Dio.netty.noPreferDirect: false
+16:52:59 DEBUG - -Dio.netty.maxDirectMemory: 1905262592 bytes
+16:52:59 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:52:59 DEBUG - java.nio.ByteBuffer.cleaner(): available
+16:52:59 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4bb1b96b
+16:52:59 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+16:52:59 DEBUG - Using Slf4j logging framework
+16:52:59 DEBUG - Starting UnsafeSupport init in Java 1.8
+16:52:59 DEBUG - Unsafe is available
+16:52:59 DEBUG - LatencyUtils/HdrUtils are not available, metrics are disabled
+16:52:59 DEBUG - -Dio.netty.allocator.numHeapArenas: 4
+16:52:59 DEBUG - -Dio.netty.allocator.numDirectArenas: 4
+16:52:59 DEBUG - -Dio.netty.allocator.pageSize: 8192
+16:52:59 DEBUG - -Dio.netty.allocator.maxOrder: 11
+16:52:59 DEBUG - -Dio.netty.allocator.chunkSize: 16777216
+16:52:59 DEBUG - -Dio.netty.allocator.tinyCacheSize: 512
+16:52:59 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+16:52:59 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+16:52:59 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16:52:59 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+16:52:59 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: true
+16:52:59 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:52:59 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:52:59 INFO  - Starting ProtocolHandler ["http-nio-8080"]
+16:52:59 INFO  - Using a shared selector for servlet write/read
+16:52:59 INFO  - Started TrainApplication in 7.013 seconds (JVM running for 7.92)

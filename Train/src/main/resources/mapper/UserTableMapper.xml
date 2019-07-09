@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaia.dao.UserTableMapper" >
+  <resultMap id="BaseResultMap" type="com.gaia.pojo.UserTable" >
+    <id column="UserID" property="userid" jdbcType="VARCHAR" />
+    <result column="UserName" property="username" jdbcType="VARCHAR" />
+    <result column="UserPhone" property="userphone" jdbcType="BIGINT" />
+    <result column="UserEmail" property="useremail" jdbcType="VARCHAR" />
+    <result column="UserPassword" property="userpassword" jdbcType="VARCHAR" />
+    <result column="UserSex" property="usersex" jdbcType="INTEGER" />
+    <result column="UserIcon" property="usericon" jdbcType="VARCHAR" />
+    <result column="UserJurisdiction" property="userjurisdiction" jdbcType="INTEGER" />
+    <result column="UserLock" property="userlock" jdbcType="INTEGER" />
+    <result column="UserRegistTime" property="userregisttime" jdbcType="BIGINT" />
+    <result column="Timestamp" property="timestamp" jdbcType="BIGINT" />
+    <result column="DeleteFlag" property="deleteflag" jdbcType="INTEGER" />
+    <result column="UserInfoJson1" property="userinfojson1" jdbcType="VARCHAR" />
+    <result column="UserInfoJson2" property="userinfojson2" jdbcType="VARCHAR" />
+    <result column="UserInfoJson3" property="userinfojson3" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from usertable
+    where UserID = #{userid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.gaia.pojo.UserTable" >
+    insert into usertable (UserID, UserName, UserPhone, 
+      UserEmail, UserPassword, UserSex, 
+      UserIcon, UserJurisdiction, UserLock, 
+      UserRegistTime, Timestamp, DeleteFlag, 
+      UserInfoJson1, UserInfoJson2, UserInfoJson3
+      )
+    values (#{userid,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{userphone,jdbcType=BIGINT}, 
+      #{useremail,jdbcType=VARCHAR}, #{userpassword,jdbcType=VARCHAR}, #{usersex,jdbcType=INTEGER}, 
+      #{usericon,jdbcType=VARCHAR}, #{userjurisdiction,jdbcType=INTEGER}, #{userlock,jdbcType=INTEGER}, 
+      #{userregisttime,jdbcType=BIGINT}, #{timestamp,jdbcType=BIGINT}, #{deleteflag,jdbcType=INTEGER}, 
+      #{userinfojson1,jdbcType=VARCHAR}, #{userinfojson2,jdbcType=VARCHAR}, #{userinfojson3,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.gaia.pojo.UserTable" >
+    update usertable
+    set UserName = #{username,jdbcType=VARCHAR},
+      UserPhone = #{userphone,jdbcType=BIGINT},
+      UserEmail = #{useremail,jdbcType=VARCHAR},
+      UserPassword = #{userpassword,jdbcType=VARCHAR},
+      UserSex = #{usersex,jdbcType=INTEGER},
+      UserIcon = #{usericon,jdbcType=VARCHAR},
+      UserJurisdiction = #{userjurisdiction,jdbcType=INTEGER},
+      UserLock = #{userlock,jdbcType=INTEGER},
+      UserRegistTime = #{userregisttime,jdbcType=BIGINT},
+      Timestamp = #{timestamp,jdbcType=BIGINT},
+      DeleteFlag = #{deleteflag,jdbcType=INTEGER},
+      UserInfoJson1 = #{userinfojson1,jdbcType=VARCHAR},
+      UserInfoJson2 = #{userinfojson2,jdbcType=VARCHAR},
+      UserInfoJson3 = #{userinfojson3,jdbcType=VARCHAR}
+    where UserID = #{userid,jdbcType=VARCHAR}
+  </update>
+  <select id="getUserInfoByUserId" resultMap="BaseResultMap" parameterType="com.gaia.pojo.UserTable" >
+    select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, 
+    UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3
+    from usertable
+    where UserID = #{userid,jdbcType=VARCHAR}
+  </select>
+   <select id="getUserInfoByUserPhone" resultMap="BaseResultMap" parameterType="com.gaia.pojo.UserTable" >
+    select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, 
+    UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3
+    from usertable
+    where UserPhone = #{userphone,jdbcType=VARCHAR}
+  </select>
+  <select id="getUserInfoByEmial" resultMap="BaseResultMap" parameterType="com.gaia.pojo.UserTable" >
+    select UserName, UserPhone, UserEmail, UserSex, UserIcon
+    UserLock from usertable where UserEmail = #{useremail,jdbcType=VARCHAR}
+  </select>
+  <select id="getUserInfoByUserName" resultMap="BaseResultMap" parameterType="com.gaia.pojo.UserTable" >
+    select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon
+    from usertable where UserName = #{username,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select UserName, UserPhone, UserEmail, UserSex, UserIcon, UserJurisdiction, 
+    DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3
+    from usertable
+  </select>
+</mapper>

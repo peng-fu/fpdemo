@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaia.dao.CommentTableMapper" >
+  <resultMap id="BaseResultMap" type="com.gaia.pojo.CommentTable" >
+    <id column="CommentID" property="commentid" jdbcType="VARCHAR" />
+    <result column="BlogID" property="blogid" jdbcType="VARCHAR" />
+    <result column="UserID" property="userid" jdbcType="VARCHAR" />
+    <result column="CommentTime" property="commenttime" jdbcType="BIGINT" />
+    <result column="DeleteFlag" property="deleteflag" jdbcType="INTEGER" />
+    <result column="Timestamp" property="timestamp" jdbcType="BIGINT" />
+    <result column="CommentContent" property="commentcontent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <resultMap type="com.gaia.pojo.CommentData" id="commentanduser">
+		<result column="CommentID" property="commentid" jdbcType="VARCHAR" />
+		<result column="CommentTime" property="commenttime" jdbcType="BIGINT" />
+		<result column="CommentContent" property="commentcontent" jdbcType="VARCHAR" />
+		<result column="UserName" property="username" jdbcType="VARCHAR" />
+	</resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from commenttable
+    where CommentID = #{commentid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.gaia.pojo.CommentTable" >
+    insert into commenttable (CommentID, BlogID, UserID, 
+      CommentTime, DeleteFlag, Timestamp, 
+      CommentContent) values (#{commentid,jdbcType=VARCHAR}, #{blogid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, 
+      #{commenttime,jdbcType=BIGINT}, #{deleteflag,jdbcType=INTEGER}, #{timestamp,jdbcType=BIGINT}, 
+      #{commentcontent,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.gaia.pojo.CommentTable" >
+    update commenttable
+    set BlogID = #{blogid,jdbcType=VARCHAR},
+      UserID = #{userid,jdbcType=VARCHAR},
+      CommentTime = #{commenttime,jdbcType=BIGINT},
+      DeleteFlag = #{deleteflag,jdbcType=INTEGER},
+      Timestamp = #{timestamp,jdbcType=BIGINT},
+      CommentContent = #{commentcontent,jdbcType=LONGVARCHAR}
+    where CommentID = #{commentid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select CommentID, BlogID, UserID, CommentTime, DeleteFlag, Timestamp, CommentContent
+    from commenttable
+    where CommentID = #{commentid,jdbcType=VARCHAR}
+  </select>
+	<select id="selectAll" resultMap="commentanduser">
+    select c.CommentID, c.CommentTime, c.CommentContent, u.UserName 
+    from commenttable c join usertable u on c.UserID = u.UserID 
+    where c.BlogID = #{blogid,jdbcType=VARCHAR}
+	order by c.CommentTime desc
+  </select>
+	
+  
+</mapper>

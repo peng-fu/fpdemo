@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gaia.dao.BlogTableMapper" >
+  <resultMap id="BaseResultMap" type="com.gaia.pojo.BlogTable" >
+    <id column="BlogID" property="blogid" jdbcType="VARCHAR" />
+    <result column="UserID" property="userid" jdbcType="VARCHAR" />
+    <result column="BlogType" property="blogtype" jdbcType="INTEGER" />
+    <result column="BlogCategory" property="blogcategory" jdbcType="VARCHAR" />
+    <result column="CommentID" property="commentid" jdbcType="VARCHAR" />
+    <result column="ReleaseTime" property="releasetime" jdbcType="BIGINT" />
+    <result column="ViewQuantity" property="viewquantity" jdbcType="INTEGER" />
+    <result column="CommentQuantity" property="commentquantity" jdbcType="INTEGER" />
+    <result column="WhetherCommentType" property="whethercommenttype" jdbcType="INTEGER" />
+    <result column="Timestamp" property="timestamp" jdbcType="BIGINT" />
+    <result column="DeleteFlag" property="deleteflag" jdbcType="INTEGER" />
+    <result column="UserInfoJson1" property="userinfojson1" jdbcType="VARCHAR" />
+    <result column="UserInfoJson2" property="userinfojson2" jdbcType="VARCHAR" />
+    <result column="UserInfoJson3" property="userinfojson3" jdbcType="VARCHAR" />
+    <result column="BlogTitle" property="blogtitle" jdbcType="LONGVARCHAR" />
+    <result column="BlogSynopsis" property="blogsynopsis" jdbcType="LONGVARCHAR" />
+    <result column="BlogContent" property="blogcontent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <resultMap id="bloganduser" type="com.gaia.pojo.BlogData">
+    <result column="BlogID" property="blogid" jdbcType="VARCHAR" />
+    <result column="BlogTitle" property="blogtitle" jdbcType="LONGVARCHAR" />
+    <result column="BlogCategory" property="blogcategory" jdbcType="VARCHAR" />
+    <result column="BlogSynopsis" property="blogsynopsis" jdbcType="LONGVARCHAR" />
+    <result column="BlogContent" property="blogcontent" jdbcType="LONGVARCHAR" />
+    <result column="ReleaseTime" property="releasetime" jdbcType="BIGINT" />
+    <result column="ViewQuantity" property="viewquantity" jdbcType="INTEGER" />
+    <result column="CommentQuantity" property="commentquantity" jdbcType="INTEGER" />
+    <result column="UserName" property="username" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from blogtable
+    where BlogID = #{blogid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.gaia.pojo.BlogTable" >
+    insert into blogtable (BlogID, UserID, BlogType, 
+      BlogCategory, CommentID, ReleaseTime, 
+      ViewQuantity, CommentQuantity, WhetherCommentType, 
+      Timestamp, DeleteFlag, UserInfoJson1, 
+      UserInfoJson2, UserInfoJson3, BlogTitle, 
+      BlogSynopsis, BlogContent)
+    values (#{blogid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{blogtype,jdbcType=INTEGER}, 
+      #{blogcategory,jdbcType=VARCHAR}, #{commentid,jdbcType=VARCHAR}, #{releasetime,jdbcType=BIGINT}, 
+      #{viewquantity,jdbcType=INTEGER}, #{commentquantity,jdbcType=INTEGER}, #{whethercommenttype,jdbcType=INTEGER}, 
+      #{timestamp,jdbcType=BIGINT}, #{deleteflag,jdbcType=INTEGER}, #{userinfojson1,jdbcType=VARCHAR}, 
+      #{userinfojson2,jdbcType=VARCHAR}, #{userinfojson3,jdbcType=VARCHAR}, #{blogtitle,jdbcType=LONGVARCHAR}, 
+      #{blogsynopsis,jdbcType=LONGVARCHAR}, #{blogcontent,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.gaia.pojo.BlogTable" >
+    update blogtable
+    set BlogType = #{blogtype,jdbcType=INTEGER},
+      BlogCategory = #{blogcategory,jdbcType=VARCHAR},
+      Timestamp = #{timestamp,jdbcType=BIGINT},
+      BlogTitle = #{blogtitle,jdbcType=LONGVARCHAR},
+      BlogSynopsis = #{blogsynopsis,jdbcType=LONGVARCHAR},
+      BlogContent = #{blogcontent,jdbcType=LONGVARCHAR}
+    where BlogID = #{blogid,jdbcType=VARCHAR} and UserID = #{userid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="bloganduser">
+    select b.BlogID, b.BlogTitle, b.BlogCategory, b.BlogSynopsis, b.BlogContent, b.ReleaseTime, b.ViewQuantity, b.CommentQuantity, u.UserName 
+	from blogtable b join usertable u on b.UserID = u.UserID 
+	where b.DeleteFlag = 0 and BlogID = #{blogid,jdbcType=VARCHAR}
+  </select>
+   <select id="selectAll" resultMap="bloganduser">
+    select b.BlogID, b.BlogTitle, b.BlogCategory, b.BlogSynopsis, b.BlogContent, b.ReleaseTime, b.ViewQuantity, b.CommentQuantity, u.UserName 
+	from blogtable b join usertable u on b.UserID = u.UserID 
+	where b.DeleteFlag = 0 
+	<if test="blogcategory != null and blogcategory != ''">
+    	and b.BlogCategory = #{blogcategory,jdbcType=VARCHAR}
+    </if>
+	order by b.ReleaseTime desc
+  </select>
+  <select id="selectAllByUserId" resultMap="bloganduser">
+    select b.BlogID, b.BlogTitle, b.BlogCategory, b.BlogSynopsis, b.BlogContent, b.ReleaseTime, b.ViewQuantity, b.CommentQuantity, u.UserName 
+	from blogtable b join usertable u on b.UserID = u.UserID 
+	where b.DeleteFlag = 0 and u.UserID = #{userid,jdbcType=VARCHAR}
+	<if test="blogcategory != null and blogcategory != ''">
+    	and b.BlogCategory = #{blogcategory,jdbcType=VARCHAR}
+    </if>
+	order by b.ReleaseTime desc
+  </select>
+</mapper>

@@ -1,0 +1,1795 @@
+09:55:58 INFO  - Starting TrainApplication on GAIA-Develop with PID 11500 (Z:\Desktop\train\Train\target\classes started by GAIA in Z:\Desktop\train\Train)
+09:55:58 DEBUG - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+09:55:58 INFO  - No active profile set, falling back to default profiles: default
+09:56:02 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\BlogTableMapper.class]
+09:56:02 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\CommentTableMapper.class]
+09:56:02 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\UserTableMapper.class]
+09:56:02 DEBUG - Creating MapperFactoryBean with name 'blogTableMapper' and 'com.gaia.dao.BlogTableMapper' mapperInterface
+09:56:02 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'blogTableMapper'.
+09:56:02 DEBUG - Creating MapperFactoryBean with name 'commentTableMapper' and 'com.gaia.dao.CommentTableMapper' mapperInterface
+09:56:02 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'commentTableMapper'.
+09:56:02 DEBUG - Creating MapperFactoryBean with name 'userTableMapper' and 'com.gaia.dao.UserTableMapper' mapperInterface
+09:56:02 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'userTableMapper'.
+09:56:04 INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+09:56:04 INFO  - Starting service [Tomcat]
+09:56:04 INFO  - Starting Servlet Engine: Apache Tomcat/8.5.31
+09:56:04 INFO  - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\； C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32;C:\Users\GAIA\node_modules\.bin;C:\app\mysql\mysql-5.7.26-winx64\bin;C:\Program Files\nodejs\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\;C:\app\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\GAIA\AppData\Local\GitHubDesktop\bin;C:\app\apache-maven-3.6.0\bin;C:\Users\GAIA\AppData\Roaming\npm;C:\app\eclipsse\Eclipse-JEE-Oxygen-R-win32-x86_64\eclipse;;.]
+09:56:05 INFO  - Initializing Spring embedded WebApplicationContext
+09:56:06 DEBUG - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+09:56:07 DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+09:56:08 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\BlogTableMapper.xml]'
+09:56:08 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\CommentTableMapper.xml]'
+09:56:08 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\UserTableMapper.xml]'
+09:56:15 DEBUG - Using SLF4J as the default logging framework
+09:56:15 DEBUG - -Dio.netty.eventLoopThreads: 3
+09:56:15 DEBUG - -Dio.netty.leakDetection.level: simple
+09:56:15 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+09:56:15 DEBUG - Platform: Windows
+09:56:15 DEBUG - -Dio.netty.noUnsafe: false
+09:56:15 DEBUG - Java version: 8
+09:56:15 DEBUG - sun.misc.Unsafe.theUnsafe: available
+09:56:15 DEBUG - sun.misc.Unsafe.copyMemory: available
+09:56:15 DEBUG - java.nio.Buffer.address: available
+09:56:15 DEBUG - direct buffer constructor: available
+09:56:15 DEBUG - java.nio.Bits.unaligned: available, true
+09:56:15 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+09:56:15 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+09:56:15 DEBUG - sun.misc.Unsafe: available
+09:56:15 DEBUG - -Dio.netty.tmpdir: C:\Users\GAIA\AppData\Local\Temp (java.io.tmpdir)
+09:56:15 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+09:56:15 DEBUG - -Dio.netty.noPreferDirect: false
+09:56:15 DEBUG - -Dio.netty.maxDirectMemory: 1905262592 bytes
+09:56:15 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+09:56:15 DEBUG - java.nio.ByteBuffer.cleaner(): available
+09:56:15 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@483f286e
+09:56:15 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+09:56:15 DEBUG - Using Slf4j logging framework
+09:56:15 DEBUG - Starting UnsafeSupport init in Java 1.8
+09:56:15 DEBUG - Unsafe is available
+09:56:15 DEBUG - LatencyUtils/HdrUtils are not available, metrics are disabled
+09:56:15 DEBUG - -Dio.netty.allocator.numHeapArenas: 4
+09:56:15 DEBUG - -Dio.netty.allocator.numDirectArenas: 4
+09:56:15 DEBUG - -Dio.netty.allocator.pageSize: 8192
+09:56:15 DEBUG - -Dio.netty.allocator.maxOrder: 11
+09:56:15 DEBUG - -Dio.netty.allocator.chunkSize: 16777216
+09:56:15 DEBUG - -Dio.netty.allocator.tinyCacheSize: 512
+09:56:15 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+09:56:15 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+09:56:15 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+09:56:15 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+09:56:15 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: true
+09:56:15 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+09:56:15 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+09:56:17 INFO  - Starting ProtocolHandler ["http-nio-8080"]
+09:56:17 ERROR - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.gaia.TrainApplication.main(TrainApplication.java:16)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+09:56:17 INFO  - Pausing ProtocolHandler ["http-nio-8080"]
+09:56:17 INFO  - Stopping service [Tomcat]
+09:56:18 INFO  - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+09:56:18 INFO  - Stopping ProtocolHandler ["http-nio-8080"]
+09:56:18 INFO  - Destroying ProtocolHandler ["http-nio-8080"]
+09:56:18 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+09:56:42 INFO  - Starting TrainApplication on GAIA-Develop with PID 5888 (Z:\Desktop\train\Train\target\classes started by GAIA in Z:\Desktop\train\Train)
+09:56:42 DEBUG - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+09:56:42 INFO  - No active profile set, falling back to default profiles: default
+09:56:44 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\BlogTableMapper.class]
+09:56:44 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\CommentTableMapper.class]
+09:56:44 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\UserTableMapper.class]
+09:56:44 DEBUG - Creating MapperFactoryBean with name 'blogTableMapper' and 'com.gaia.dao.BlogTableMapper' mapperInterface
+09:56:44 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'blogTableMapper'.
+09:56:44 DEBUG - Creating MapperFactoryBean with name 'commentTableMapper' and 'com.gaia.dao.CommentTableMapper' mapperInterface
+09:56:44 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'commentTableMapper'.
+09:56:44 DEBUG - Creating MapperFactoryBean with name 'userTableMapper' and 'com.gaia.dao.UserTableMapper' mapperInterface
+09:56:44 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'userTableMapper'.
+09:56:47 INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+09:56:47 INFO  - Starting service [Tomcat]
+09:56:47 INFO  - Starting Servlet Engine: Apache Tomcat/8.5.31
+09:56:47 INFO  - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\； C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32;C:\Users\GAIA\node_modules\.bin;C:\app\mysql\mysql-5.7.26-winx64\bin;C:\Program Files\nodejs\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\;C:\app\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\GAIA\AppData\Local\GitHubDesktop\bin;C:\app\apache-maven-3.6.0\bin;C:\Users\GAIA\AppData\Roaming\npm;C:\app\eclipsse\Eclipse-JEE-Oxygen-R-win32-x86_64\eclipse;;.]
+09:56:47 INFO  - Initializing Spring embedded WebApplicationContext
+09:56:48 DEBUG - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+09:56:48 DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+09:56:49 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\BlogTableMapper.xml]'
+09:56:49 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\CommentTableMapper.xml]'
+09:56:49 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\UserTableMapper.xml]'
+09:56:51 DEBUG - Using SLF4J as the default logging framework
+09:56:51 DEBUG - -Dio.netty.eventLoopThreads: 3
+09:56:51 DEBUG - -Dio.netty.leakDetection.level: simple
+09:56:51 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+09:56:51 DEBUG - Platform: Windows
+09:56:51 DEBUG - -Dio.netty.noUnsafe: false
+09:56:51 DEBUG - Java version: 8
+09:56:51 DEBUG - sun.misc.Unsafe.theUnsafe: available
+09:56:51 DEBUG - sun.misc.Unsafe.copyMemory: available
+09:56:51 DEBUG - java.nio.Buffer.address: available
+09:56:51 DEBUG - direct buffer constructor: available
+09:56:51 DEBUG - java.nio.Bits.unaligned: available, true
+09:56:51 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+09:56:51 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+09:56:51 DEBUG - sun.misc.Unsafe: available
+09:56:51 DEBUG - -Dio.netty.tmpdir: C:\Users\GAIA\AppData\Local\Temp (java.io.tmpdir)
+09:56:51 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+09:56:51 DEBUG - -Dio.netty.noPreferDirect: false
+09:56:51 DEBUG - -Dio.netty.maxDirectMemory: 1905262592 bytes
+09:56:51 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+09:56:51 DEBUG - java.nio.ByteBuffer.cleaner(): available
+09:56:51 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3ece79fe
+09:56:51 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+09:56:51 DEBUG - Using Slf4j logging framework
+09:56:52 DEBUG - Starting UnsafeSupport init in Java 1.8
+09:56:52 DEBUG - Unsafe is available
+09:56:52 DEBUG - LatencyUtils/HdrUtils are not available, metrics are disabled
+09:56:52 DEBUG - -Dio.netty.allocator.numHeapArenas: 4
+09:56:52 DEBUG - -Dio.netty.allocator.numDirectArenas: 4
+09:56:52 DEBUG - -Dio.netty.allocator.pageSize: 8192
+09:56:52 DEBUG - -Dio.netty.allocator.maxOrder: 11
+09:56:52 DEBUG - -Dio.netty.allocator.chunkSize: 16777216
+09:56:52 DEBUG - -Dio.netty.allocator.tinyCacheSize: 512
+09:56:52 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+09:56:52 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+09:56:52 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+09:56:52 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+09:56:52 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: true
+09:56:52 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+09:56:52 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+09:56:53 INFO  - Starting ProtocolHandler ["http-nio-8080"]
+09:56:53 ERROR - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.gaia.TrainApplication.main(TrainApplication.java:16)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+09:56:53 INFO  - Pausing ProtocolHandler ["http-nio-8080"]
+09:56:53 INFO  - Stopping service [Tomcat]
+09:56:53 INFO  - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+09:56:53 INFO  - Stopping ProtocolHandler ["http-nio-8080"]
+09:56:53 INFO  - Destroying ProtocolHandler ["http-nio-8080"]
+09:56:53 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+09:57:23 INFO  - Starting TrainApplication on GAIA-Develop with PID 8608 (Z:\Desktop\train\Train\target\classes started by GAIA in Z:\Desktop\train\Train)
+09:57:23 DEBUG - Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+09:57:23 INFO  - No active profile set, falling back to default profiles: default
+09:57:27 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\BlogTableMapper.class]
+09:57:27 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\CommentTableMapper.class]
+09:57:27 DEBUG - Identified candidate component class: file [Z:\Desktop\train\Train\target\classes\com\gaia\dao\UserTableMapper.class]
+09:57:27 DEBUG - Creating MapperFactoryBean with name 'blogTableMapper' and 'com.gaia.dao.BlogTableMapper' mapperInterface
+09:57:27 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'blogTableMapper'.
+09:57:27 DEBUG - Creating MapperFactoryBean with name 'commentTableMapper' and 'com.gaia.dao.CommentTableMapper' mapperInterface
+09:57:27 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'commentTableMapper'.
+09:57:27 DEBUG - Creating MapperFactoryBean with name 'userTableMapper' and 'com.gaia.dao.UserTableMapper' mapperInterface
+09:57:27 DEBUG - Enabling autowire by type for MapperFactoryBean with name 'userTableMapper'.
+09:57:30 INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+09:57:30 INFO  - Starting service [Tomcat]
+09:57:30 INFO  - Starting Servlet Engine: Apache Tomcat/8.5.31
+09:57:30 INFO  - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\； C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32;C:\Users\GAIA\node_modules\.bin;C:\app\mysql\mysql-5.7.26-winx64\bin;C:\Program Files\nodejs\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\GAIA\AppData\Local\Programs\Python\Python37-32\;C:\app\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\GAIA\AppData\Local\GitHubDesktop\bin;C:\app\apache-maven-3.6.0\bin;C:\Users\GAIA\AppData\Roaming\npm;C:\app\eclipsse\Eclipse-JEE-Oxygen-R-win32-x86_64\eclipse;;.]
+09:57:30 INFO  - Initializing Spring embedded WebApplicationContext
+09:57:31 DEBUG - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+09:57:31 DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+09:57:31 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\BlogTableMapper.xml]'
+09:57:31 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\CommentTableMapper.xml]'
+09:57:31 DEBUG - Parsed mapper file: 'file [Z:\Desktop\train\Train\target\classes\mapper\UserTableMapper.xml]'
+09:57:34 DEBUG - Using SLF4J as the default logging framework
+09:57:34 DEBUG - -Dio.netty.eventLoopThreads: 3
+09:57:35 DEBUG - -Dio.netty.leakDetection.level: simple
+09:57:35 DEBUG - -Dio.netty.leakDetection.targetRecords: 4
+09:57:35 DEBUG - Platform: Windows
+09:57:35 DEBUG - -Dio.netty.noUnsafe: false
+09:57:35 DEBUG - Java version: 8
+09:57:35 DEBUG - sun.misc.Unsafe.theUnsafe: available
+09:57:35 DEBUG - sun.misc.Unsafe.copyMemory: available
+09:57:35 DEBUG - java.nio.Buffer.address: available
+09:57:35 DEBUG - direct buffer constructor: available
+09:57:35 DEBUG - java.nio.Bits.unaligned: available, true
+09:57:35 DEBUG - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+09:57:35 DEBUG - java.nio.DirectByteBuffer.<init>(long, int): available
+09:57:35 DEBUG - sun.misc.Unsafe: available
+09:57:35 DEBUG - -Dio.netty.tmpdir: C:\Users\GAIA\AppData\Local\Temp (java.io.tmpdir)
+09:57:35 DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+09:57:35 DEBUG - -Dio.netty.noPreferDirect: false
+09:57:35 DEBUG - -Dio.netty.maxDirectMemory: 1905262592 bytes
+09:57:35 DEBUG - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+09:57:35 DEBUG - java.nio.ByteBuffer.cleaner(): available
+09:57:35 DEBUG - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5403799b
+09:57:35 DEBUG - org.jctools-core.MpscChunkedArrayQueue: available
+09:57:35 DEBUG - Using Slf4j logging framework
+09:57:35 DEBUG - Starting UnsafeSupport init in Java 1.8
+09:57:35 DEBUG - Unsafe is available
+09:57:35 DEBUG - LatencyUtils/HdrUtils are not available, metrics are disabled
+09:57:35 DEBUG - -Dio.netty.allocator.numHeapArenas: 4
+09:57:35 DEBUG - -Dio.netty.allocator.numDirectArenas: 4
+09:57:35 DEBUG - -Dio.netty.allocator.pageSize: 8192
+09:57:35 DEBUG - -Dio.netty.allocator.maxOrder: 11
+09:57:35 DEBUG - -Dio.netty.allocator.chunkSize: 16777216
+09:57:35 DEBUG - -Dio.netty.allocator.tinyCacheSize: 512
+09:57:35 DEBUG - -Dio.netty.allocator.smallCacheSize: 256
+09:57:35 DEBUG - -Dio.netty.allocator.normalCacheSize: 64
+09:57:35 DEBUG - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+09:57:35 DEBUG - -Dio.netty.allocator.cacheTrimInterval: 8192
+09:57:35 DEBUG - -Dio.netty.allocator.useCacheForAllThreads: true
+09:57:35 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+09:57:35 DEBUG - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+09:57:36 INFO  - Starting ProtocolHandler ["http-nio-8080"]
+09:57:37 INFO  - Using a shared selector for servlet write/read
+09:57:37 INFO  - Started TrainApplication in 14.943 seconds (JVM running for 16.045)
+09:57:50 INFO  - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:29:16 DEBUG - Creating a new SqlSession
+10:29:16 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12e79869] was not registered for synchronization because synchronization is not active
+10:29:16 DEBUG - HikariPool-1 - configuration:
+10:29:16 DEBUG - allowPoolSuspension.............false
+10:29:16 DEBUG - autoCommit......................true
+10:29:16 DEBUG - catalog.........................none
+10:29:16 DEBUG - connectionInitSql...............none
+10:29:16 DEBUG - connectionTestQuery.............none
+10:29:16 DEBUG - connectionTimeout...............30000
+10:29:16 DEBUG - dataSource......................none
+10:29:16 DEBUG - dataSourceClassName.............none
+10:29:16 DEBUG - dataSourceJNDI..................none
+10:29:16 DEBUG - dataSourceProperties............{password=<masked>}
+10:29:16 DEBUG - driverClassName................."com.mysql.jdbc.Driver"
+10:29:16 DEBUG - healthCheckProperties...........{}
+10:29:16 DEBUG - healthCheckRegistry.............none
+10:29:16 DEBUG - idleTimeout.....................600000
+10:29:16 DEBUG - initializationFailFast..........true
+10:29:16 DEBUG - initializationFailTimeout.......1
+10:29:16 DEBUG - isolateInternalQueries..........false
+10:29:16 DEBUG - jdbc4ConnectionTest.............false
+10:29:16 DEBUG - jdbcUrl.........................jdbc:mysql://127.0.0.1/suweb?useUnicode=true&characterEncoding=utf8&useSSL=true
+10:29:16 DEBUG - leakDetectionThreshold..........0
+10:29:16 DEBUG - maxLifetime.....................1800000
+10:29:16 DEBUG - maximumPoolSize.................10
+10:29:16 DEBUG - metricRegistry..................none
+10:29:16 DEBUG - metricsTrackerFactory...........none
+10:29:16 DEBUG - minimumIdle.....................10
+10:29:16 DEBUG - password........................<masked>
+10:29:16 DEBUG - poolName........................"HikariPool-1"
+10:29:16 DEBUG - readOnly........................false
+10:29:16 DEBUG - registerMbeans..................false
+10:29:16 DEBUG - scheduledExecutor...............none
+10:29:16 DEBUG - scheduledExecutorService........internal
+10:29:16 DEBUG - schema..........................none
+10:29:16 DEBUG - threadFactory...................internal
+10:29:16 DEBUG - transactionIsolation............default
+10:29:16 DEBUG - username........................"root"
+10:29:16 DEBUG - validationTimeout...............5000
+10:29:16 INFO  - HikariPool-1 - Starting...
+10:29:17 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@678c9cbc
+10:29:17 INFO  - HikariPool-1 - Start completed.
+10:29:17 DEBUG - JDBC Connection [HikariProxyConnection@597568565 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:29:17 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:29:17 DEBUG - ==> Parameters: nur723(String)
+10:29:17 DEBUG - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+10:29:17 DEBUG - <==      Total: 1
+10:29:17 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12e79869]
+10:29:17 DEBUG - 登录-密码错误---username:nur723
+10:29:17 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@77c67680
+10:29:17 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@33cf729
+10:29:17 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5c8e9c42
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3b55d0e3
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6b8bc020
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1446e420
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7d34816f
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@10b736b3
+10:29:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@64d589bc
+10:29:18 DEBUG - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+10:29:27 DEBUG - Creating a new SqlSession
+10:29:27 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2891e461] was not registered for synchronization because synchronization is not active
+10:29:27 DEBUG - JDBC Connection [HikariProxyConnection@643178243 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:29:27 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:29:27 DEBUG - ==> Parameters: nur723(String)
+10:29:27 DEBUG - <==      Total: 1
+10:29:27 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2891e461]
+10:29:27 DEBUG - 登录-密码错误---username:nur723
+10:29:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:29:50 DEBUG - Creating a new SqlSession
+10:29:50 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c573ea1] was not registered for synchronization because synchronization is not active
+10:29:50 DEBUG - JDBC Connection [HikariProxyConnection@909282109 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:29:50 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:29:50 DEBUG - ==> Parameters: nur628(String)
+10:29:50 DEBUG - <==      Total: 0
+10:29:50 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c573ea1]
+10:29:50 DEBUG - 登录-用户不存在---username:nur628
+10:30:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:30:22 DEBUG - Creating a new SqlSession
+10:30:22 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402722ee] was not registered for synchronization because synchronization is not active
+10:30:22 DEBUG - JDBC Connection [HikariProxyConnection@977957149 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:30:22 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserPhone = ? 
+10:30:22 DEBUG - ==> Parameters: 17521515627(Long)
+10:30:22 DEBUG - <==      Total: 1
+10:30:22 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@402722ee]
+10:30:22 DEBUG - Creating a new SqlSession
+10:30:22 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59a7d4a] was not registered for synchronization because synchronization is not active
+10:30:22 DEBUG - JDBC Connection [HikariProxyConnection@2047617115 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:30:22 DEBUG - ==>  Preparing: update usertable set userpassword = ? where userid = ? 
+10:30:22 DEBUG - ==> Parameters: 123456(String), 27bac170c50143ffbf8077cc37024997(String)
+10:30:22 DEBUG - <==    Updates: 1
+10:30:22 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59a7d4a]
+10:30:22 DEBUG - 忘记密码-密码修改成功---userphone17521515627
+10:30:37 DEBUG - Creating a new SqlSession
+10:30:37 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55585005] was not registered for synchronization because synchronization is not active
+10:30:37 DEBUG - JDBC Connection [HikariProxyConnection@1537193182 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:30:37 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:30:37 DEBUG - ==> Parameters: nur723(String)
+10:30:37 DEBUG - <==      Total: 1
+10:30:37 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55585005]
+10:30:37 DEBUG - 登录-登录成功---username:nur723
+10:30:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:31:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:31:41 DEBUG - Creating a new SqlSession
+10:31:41 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8229f9] was not registered for synchronization because synchronization is not active
+10:31:41 DEBUG - JDBC Connection [HikariProxyConnection@1397083193 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:31:41 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:31:41 DEBUG - ==> Parameters: nur723(String)
+10:31:41 DEBUG - <==      Total: 1
+10:31:41 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8229f9]
+10:31:41 DEBUG - 登录-登录成功---username:nur723
+10:31:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:32:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:32:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:33:14 DEBUG - Creating a new SqlSession
+10:33:14 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5052a15b] was not registered for synchronization because synchronization is not active
+10:33:14 DEBUG - JDBC Connection [HikariProxyConnection@481366128 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:33:14 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:33:14 DEBUG - ==> Parameters: nur723(String)
+10:33:14 DEBUG - <==      Total: 1
+10:33:14 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5052a15b]
+10:33:14 DEBUG - 登录-登录成功---username:nur723
+10:33:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:33:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:34:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:34:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:35:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:35:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:36:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:36:29 DEBUG - Creating a new SqlSession
+10:36:29 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5148f833] was not registered for synchronization because synchronization is not active
+10:36:29 DEBUG - JDBC Connection [HikariProxyConnection@1483290616 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:36:29 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:36:29 DEBUG - ==> Parameters: nur723(String)
+10:36:29 DEBUG - <==      Total: 1
+10:36:29 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5148f833]
+10:36:29 DEBUG - 登录-密码错误---username:nur723
+10:36:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:36:54 DEBUG - Creating a new SqlSession
+10:36:54 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1278c602] was not registered for synchronization because synchronization is not active
+10:36:54 DEBUG - JDBC Connection [HikariProxyConnection@1585047637 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:36:54 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:36:54 DEBUG - ==> Parameters: nur723(String)
+10:36:54 DEBUG - <==      Total: 1
+10:36:54 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1278c602]
+10:36:54 DEBUG - 登录-登录成功---username:nur723
+10:36:57 DEBUG - Creating a new SqlSession
+10:36:57 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@476b1e8] was not registered for synchronization because synchronization is not active
+10:36:57 DEBUG - JDBC Connection [HikariProxyConnection@4793790 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:36:57 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:36:57 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:36:57 DEBUG - <==      Total: 1
+10:36:57 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@476b1e8]
+10:37:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:37:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:38:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:38:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:39:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:39:35 DEBUG - Creating a new SqlSession
+10:39:35 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7211baf7] was not registered for synchronization because synchronization is not active
+10:39:35 DEBUG - JDBC Connection [HikariProxyConnection@931960215 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:39:35 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:39:35 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:39:35 DEBUG - <==      Total: 1
+10:39:35 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7211baf7]
+10:39:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:40:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:40:45 DEBUG - Creating a new SqlSession
+10:40:45 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad08502] was not registered for synchronization because synchronization is not active
+10:40:45 DEBUG - JDBC Connection [HikariProxyConnection@297235899 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:40:45 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:40:45 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:40:45 DEBUG - <==      Total: 1
+10:40:45 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad08502]
+10:40:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:41:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:41:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:41:53 DEBUG - Creating a new SqlSession
+10:41:53 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bf261fb] was not registered for synchronization because synchronization is not active
+10:41:53 DEBUG - JDBC Connection [HikariProxyConnection@1977064547 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:41:53 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:41:53 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:41:53 DEBUG - <==      Total: 1
+10:41:53 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bf261fb]
+10:42:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:42:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:42:53 DEBUG - Creating a new SqlSession
+10:42:53 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77155a2b] was not registered for synchronization because synchronization is not active
+10:42:53 DEBUG - JDBC Connection [HikariProxyConnection@1138407354 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:42:53 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:42:53 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:42:53 DEBUG - <==      Total: 1
+10:42:53 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77155a2b]
+10:43:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:43:23 DEBUG - Creating a new SqlSession
+10:43:23 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d84d1b] was not registered for synchronization because synchronization is not active
+10:43:23 DEBUG - JDBC Connection [HikariProxyConnection@644738476 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:43:23 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:43:23 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:43:23 DEBUG - <==      Total: 1
+10:43:23 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d84d1b]
+10:43:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:44:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:44:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:45:03 DEBUG - Creating a new SqlSession
+10:45:03 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71381432] was not registered for synchronization because synchronization is not active
+10:45:03 DEBUG - JDBC Connection [HikariProxyConnection@190053915 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:45:03 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:45:03 DEBUG - ==> Parameters: nur723(String)
+10:45:03 DEBUG - <==      Total: 1
+10:45:03 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71381432]
+10:45:03 DEBUG - 登录-登录成功---username:nur723
+10:45:03 DEBUG - Creating a new SqlSession
+10:45:03 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@676b1538] was not registered for synchronization because synchronization is not active
+10:45:03 DEBUG - JDBC Connection [HikariProxyConnection@1082021720 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:45:03 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:45:03 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:45:03 DEBUG - <==      Total: 1
+10:45:03 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@676b1538]
+10:45:06 DEBUG - Creating a new SqlSession
+10:45:06 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b0c1d3] was not registered for synchronization because synchronization is not active
+10:45:06 DEBUG - JDBC Connection [HikariProxyConnection@909555026 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:45:06 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:45:06 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:45:06 DEBUG - <==      Total: 1
+10:45:06 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48b0c1d3]
+10:45:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:45:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:46:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:46:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:47:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:47:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:48:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:48:38 DEBUG - Creating a new SqlSession
+10:48:38 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f6ba04a] was not registered for synchronization because synchronization is not active
+10:48:38 DEBUG - JDBC Connection [HikariProxyConnection@665778149 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:48:38 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:48:38 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:48:38 DEBUG - <==      Total: 1
+10:48:38 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f6ba04a]
+10:48:44 DEBUG - Creating a new SqlSession
+10:48:44 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7724d184] was not registered for synchronization because synchronization is not active
+10:48:44 DEBUG - JDBC Connection [HikariProxyConnection@1639659059 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:48:44 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:48:44 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:48:44 DEBUG - <==      Total: 1
+10:48:44 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7724d184]
+10:48:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:49:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:49:36 DEBUG - Creating a new SqlSession
+10:49:36 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b940349] was not registered for synchronization because synchronization is not active
+10:49:36 DEBUG - JDBC Connection [HikariProxyConnection@1989265637 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:49:36 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:49:36 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:49:36 DEBUG - <==      Total: 1
+10:49:36 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b940349]
+10:49:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:49:53 DEBUG - Creating a new SqlSession
+10:49:53 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ac7acb] was not registered for synchronization because synchronization is not active
+10:49:53 DEBUG - JDBC Connection [HikariProxyConnection@333516506 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:49:53 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:49:53 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:49:53 DEBUG - <==      Total: 1
+10:49:53 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ac7acb]
+10:50:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:50:30 DEBUG - Creating a new SqlSession
+10:50:30 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252ddcf1] was not registered for synchronization because synchronization is not active
+10:50:30 DEBUG - JDBC Connection [HikariProxyConnection@902225095 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:50:30 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+10:50:30 DEBUG - ==> Parameters: nur723(String)
+10:50:30 DEBUG - <==      Total: 1
+10:50:30 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@252ddcf1]
+10:50:30 DEBUG - 登录-登录成功---username:nur723
+10:50:30 DEBUG - Creating a new SqlSession
+10:50:30 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f6c208a] was not registered for synchronization because synchronization is not active
+10:50:30 DEBUG - JDBC Connection [HikariProxyConnection@1638662289 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:50:30 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:50:30 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:50:30 DEBUG - <==      Total: 1
+10:50:30 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f6c208a]
+10:50:33 DEBUG - Creating a new SqlSession
+10:50:33 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd2f476] was not registered for synchronization because synchronization is not active
+10:50:33 DEBUG - JDBC Connection [HikariProxyConnection@1914831974 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:50:33 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:50:33 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:50:33 DEBUG - <==      Total: 1
+10:50:33 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd2f476]
+10:50:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:51:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:51:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:52:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:52:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:53:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:53:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:54:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:54:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:55:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:55:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:56:10 DEBUG - Creating a new SqlSession
+10:56:10 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ec3df96] was not registered for synchronization because synchronization is not active
+10:56:10 DEBUG - JDBC Connection [HikariProxyConnection@1013467636 wrapping com.mysql.jdbc.JDBC4Connection@678c9cbc] will not be managed by Spring
+10:56:10 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+10:56:10 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+10:56:10 DEBUG - <==      Total: 1
+10:56:10 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ec3df96]
+10:56:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:56:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:57:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:57:47 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:58:17 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:58:35 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@77c67680: (connection has passed maxLifetime)
+10:58:36 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@61a6787c
+10:58:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:58:48 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@678c9cbc: (connection has passed maxLifetime)
+10:58:48 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@72a719d1
+10:58:55 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6b8bc020: (connection has passed maxLifetime)
+10:58:55 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4bae6157
+10:58:55 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5c8e9c42: (connection has passed maxLifetime)
+10:58:55 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3f68bb04
+10:58:55 DEBUG - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+10:59:04 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@33cf729: (connection has passed maxLifetime)
+10:59:04 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@778c7d86
+10:59:04 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@10b736b3: (connection has passed maxLifetime)
+10:59:04 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@f192298
+10:59:05 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3b55d0e3: (connection has passed maxLifetime)
+10:59:05 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3c9f7a53
+10:59:09 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7d34816f: (connection has passed maxLifetime)
+10:59:09 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6ea84ddf
+10:59:10 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1446e420: (connection has passed maxLifetime)
+10:59:10 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@64d589bc: (connection has passed maxLifetime)
+10:59:10 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@62052e8a
+10:59:10 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6c6499c6
+10:59:10 DEBUG - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+10:59:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+10:59:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:00:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:00:25 DEBUG - Creating a new SqlSession
+11:00:25 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6661e691] was not registered for synchronization because synchronization is not active
+11:00:25 DEBUG - JDBC Connection [HikariProxyConnection@1031108998 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:00:25 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:00:25 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:00:25 DEBUG - <==      Total: 1
+11:00:25 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6661e691]
+11:00:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:01:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:01:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:02:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:02:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:03:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:03:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:04:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:04:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:05:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:05:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:06:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:06:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:07:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:07:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:08:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:08:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:08:50 DEBUG - Creating a new SqlSession
+11:08:50 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117ff12d] was not registered for synchronization because synchronization is not active
+11:08:50 DEBUG - JDBC Connection [HikariProxyConnection@1952492523 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:08:50 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+11:08:50 DEBUG - ==> Parameters: nur723(String)
+11:08:50 DEBUG - <==      Total: 1
+11:08:50 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117ff12d]
+11:08:50 DEBUG - 登录-登录成功---username:nur723
+11:08:50 DEBUG - Creating a new SqlSession
+11:08:50 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0720f6] was not registered for synchronization because synchronization is not active
+11:08:50 DEBUG - JDBC Connection [HikariProxyConnection@1627334522 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:08:50 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:08:50 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:08:50 DEBUG - <==      Total: 1
+11:08:50 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f0720f6]
+11:09:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:09:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:09:55 DEBUG - Creating a new SqlSession
+11:09:55 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43a6cea8] was not registered for synchronization because synchronization is not active
+11:09:55 DEBUG - JDBC Connection [HikariProxyConnection@1034997286 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:09:55 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+11:09:55 DEBUG - ==> Parameters: nur723(String)
+11:09:55 DEBUG - <==      Total: 1
+11:09:55 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43a6cea8]
+11:09:55 DEBUG - 登录-登录成功---username:nur723
+11:09:55 DEBUG - Creating a new SqlSession
+11:09:55 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5db31be4] was not registered for synchronization because synchronization is not active
+11:09:55 DEBUG - JDBC Connection [HikariProxyConnection@1994990944 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:09:55 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:09:55 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:09:55 DEBUG - <==      Total: 1
+11:09:55 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5db31be4]
+11:10:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:10:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:10:49 DEBUG - Creating a new SqlSession
+11:10:49 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72a77b96] was not registered for synchronization because synchronization is not active
+11:10:49 DEBUG - JDBC Connection [HikariProxyConnection@1986024270 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:10:49 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+11:10:49 DEBUG - ==> Parameters: nur723(String)
+11:10:49 DEBUG - <==      Total: 1
+11:10:49 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72a77b96]
+11:10:49 DEBUG - 登录-登录成功---username:nur723
+11:10:49 DEBUG - Creating a new SqlSession
+11:10:49 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@601d85a3] was not registered for synchronization because synchronization is not active
+11:10:49 DEBUG - JDBC Connection [HikariProxyConnection@837075157 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:10:49 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:10:49 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:10:49 DEBUG - <==      Total: 1
+11:10:49 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@601d85a3]
+11:11:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:11:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:12:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:12:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:13:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:13:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:14:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:14:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:15:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:15:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:16:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:16:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:17:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:17:43 DEBUG - Creating a new SqlSession
+11:17:43 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eaa2c39] was not registered for synchronization because synchronization is not active
+11:17:43 DEBUG - JDBC Connection [HikariProxyConnection@1622295128 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:17:43 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+11:17:43 DEBUG - ==> Parameters: nur723(String)
+11:17:43 DEBUG - <==      Total: 1
+11:17:43 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eaa2c39]
+11:17:43 DEBUG - 登录-登录成功---username:nur723
+11:17:43 DEBUG - Creating a new SqlSession
+11:17:43 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@314b0abf] was not registered for synchronization because synchronization is not active
+11:17:43 DEBUG - JDBC Connection [HikariProxyConnection@927833328 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:17:43 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:17:43 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:17:43 DEBUG - <==      Total: 1
+11:17:43 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@314b0abf]
+11:17:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:18:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:18:36 DEBUG - Creating a new SqlSession
+11:18:36 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43efd86a] was not registered for synchronization because synchronization is not active
+11:18:36 DEBUG - JDBC Connection [HikariProxyConnection@141446834 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:18:36 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:18:36 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:18:36 DEBUG - <==      Total: 1
+11:18:36 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43efd86a]
+11:18:42 DEBUG - Creating a new SqlSession
+11:18:42 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dce2cd8] was not registered for synchronization because synchronization is not active
+11:18:42 DEBUG - JDBC Connection [HikariProxyConnection@1491625031 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:18:42 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:18:42 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:18:42 DEBUG - <==      Total: 1
+11:18:42 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dce2cd8]
+11:18:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:18:52 DEBUG - Creating a new SqlSession
+11:18:52 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b1a030] was not registered for synchronization because synchronization is not active
+11:18:52 DEBUG - JDBC Connection [HikariProxyConnection@1293477625 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:18:52 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:18:52 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:18:52 DEBUG - <==      Total: 1
+11:18:52 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8b1a030]
+11:19:08 DEBUG - Creating a new SqlSession
+11:19:08 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34b77c9d] was not registered for synchronization because synchronization is not active
+11:19:08 DEBUG - JDBC Connection [HikariProxyConnection@77033187 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:19:08 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:19:08 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:19:08 DEBUG - <==      Total: 1
+11:19:08 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34b77c9d]
+11:19:13 DEBUG - Creating a new SqlSession
+11:19:13 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25d336e8] was not registered for synchronization because synchronization is not active
+11:19:13 DEBUG - JDBC Connection [HikariProxyConnection@1826722319 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:19:13 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:19:13 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:19:13 DEBUG - <==      Total: 1
+11:19:13 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25d336e8]
+11:19:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:19:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:20:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:20:23 DEBUG - Creating a new SqlSession
+11:20:23 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5908fe38] was not registered for synchronization because synchronization is not active
+11:20:23 DEBUG - JDBC Connection [HikariProxyConnection@1239841486 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:20:23 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:20:23 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:20:23 DEBUG - <==      Total: 1
+11:20:23 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5908fe38]
+11:20:35 DEBUG - Creating a new SqlSession
+11:20:35 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@637d5c12] was not registered for synchronization because synchronization is not active
+11:20:35 DEBUG - JDBC Connection [HikariProxyConnection@1181029937 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:20:35 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:20:35 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:20:35 DEBUG - <==      Total: 1
+11:20:35 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@637d5c12]
+11:20:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:20:59 DEBUG - Creating a new SqlSession
+11:20:59 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@197bfbfe] was not registered for synchronization because synchronization is not active
+11:20:59 DEBUG - JDBC Connection [HikariProxyConnection@1190119180 wrapping com.mysql.jdbc.JDBC4Connection@61a6787c] will not be managed by Spring
+11:20:59 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:20:59 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:20:59 DEBUG - <==      Total: 1
+11:20:59 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@197bfbfe]
+11:21:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:21:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:22:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:22:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:23:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:23:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:24:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:24:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:25:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:25:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:26:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:26:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:27:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:27:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:27:53 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@61a6787c: (connection has passed maxLifetime)
+11:27:53 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5282d6e7
+11:28:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:28:31 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@72a719d1: (connection has passed maxLifetime)
+11:28:31 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2a9cf7e6
+11:28:31 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@62052e8a: (connection has passed maxLifetime)
+11:28:31 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5ebbf227
+11:28:31 DEBUG - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+11:28:31 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@778c7d86: (connection has passed maxLifetime)
+11:28:31 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@32faf9ed
+11:28:34 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3f68bb04: (connection has passed maxLifetime)
+11:28:34 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@bff7896
+11:28:34 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4bae6157: (connection has passed maxLifetime)
+11:28:34 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@50d0c311
+11:28:43 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6c6499c6: (connection has passed maxLifetime)
+11:28:43 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4772b7ca
+11:28:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:28:50 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6ea84ddf: (connection has passed maxLifetime)
+11:28:50 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@602d33ea
+11:28:52 DEBUG - Creating a new SqlSession
+11:28:52 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6589fd86] was not registered for synchronization because synchronization is not active
+11:28:52 DEBUG - JDBC Connection [HikariProxyConnection@1486378453 wrapping com.mysql.jdbc.JDBC4Connection@f192298] will not be managed by Spring
+11:28:52 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+11:28:52 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+11:28:52 DEBUG - <==      Total: 1
+11:28:52 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6589fd86]
+11:28:54 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3c9f7a53: (connection has passed maxLifetime)
+11:28:55 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1440d418
+11:28:56 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@f192298: (connection has passed maxLifetime)
+11:28:56 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@518b8594
+11:29:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:29:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:30:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:30:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:31:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:31:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:32:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:32:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:33:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:33:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:34:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:34:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:35:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:35:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:36:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:36:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:37:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:37:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:38:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:38:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:39:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:39:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:40:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:40:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:41:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:41:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:42:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:42:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:43:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:43:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:44:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:44:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:45:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:45:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:46:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:46:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:47:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:47:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:48:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:48:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:49:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:49:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:50:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:50:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:51:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:51:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:52:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:52:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:53:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:53:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:54:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:54:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:55:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:55:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:56:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:56:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:57:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:57:45 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5282d6e7: (connection has passed maxLifetime)
+11:57:45 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@22f93c39
+11:57:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:57:54 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2a9cf7e6: (connection has passed maxLifetime)
+11:57:54 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@748b3ff9
+11:57:56 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@bff7896: (connection has passed maxLifetime)
+11:57:56 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@f26835
+11:57:56 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5ebbf227: (connection has passed maxLifetime)
+11:57:56 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@578fc7ed
+11:58:12 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@602d33ea: (connection has passed maxLifetime)
+11:58:12 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6485e024
+11:58:15 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@32faf9ed: (connection has passed maxLifetime)
+11:58:15 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@106c3330
+11:58:16 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@50d0c311: (connection has passed maxLifetime)
+11:58:16 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@71ee61a7
+11:58:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:58:19 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@518b8594: (connection has passed maxLifetime)
+11:58:19 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@45e6b09e
+11:58:30 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4772b7ca: (connection has passed maxLifetime)
+11:58:30 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@64164e6
+11:58:43 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1440d418: (connection has passed maxLifetime)
+11:58:43 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7e75ef2a
+11:58:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:59:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+11:59:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:00:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:00:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:01:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:01:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:02:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:02:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:03:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:03:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:04:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:04:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:05:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:05:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:06:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:06:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:07:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:07:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:08:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:08:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:09:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:09:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:10:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:10:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:11:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:11:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:12:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:12:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:13:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:13:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:14:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:14:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:15:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:15:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:16:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:16:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:17:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:17:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:18:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:18:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:19:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:19:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:20:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:20:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:21:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:21:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:22:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:22:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:23:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:23:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:24:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:24:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:25:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:25:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:26:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:26:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:27:12 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@22f93c39: (connection has passed maxLifetime)
+12:27:12 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3a352d79
+12:27:14 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@578fc7ed: (connection has passed maxLifetime)
+12:27:14 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4e029bd6
+12:27:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:27:23 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@748b3ff9: (connection has passed maxLifetime)
+12:27:23 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6ba612cc
+12:27:31 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@f26835: (connection has passed maxLifetime)
+12:27:31 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@81910f1
+12:27:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:27:50 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@106c3330: (connection has passed maxLifetime)
+12:27:50 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@e2e3f2e
+12:27:51 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@45e6b09e: (connection has passed maxLifetime)
+12:27:51 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7a2db813
+12:27:59 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6485e024: (connection has passed maxLifetime)
+12:27:59 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6e58537c
+12:28:08 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7e75ef2a: (connection has passed maxLifetime)
+12:28:08 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1b503a38
+12:28:11 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@71ee61a7: (connection has passed maxLifetime)
+12:28:11 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6fc65cc9
+12:28:12 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@64164e6: (connection has passed maxLifetime)
+12:28:12 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2fb2a6b4
+12:28:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:28:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:29:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:29:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:30:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:30:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:31:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:31:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:32:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:32:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:33:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:33:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:34:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:34:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:35:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:35:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:36:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:36:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:37:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:37:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:38:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:38:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:39:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:39:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:40:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:40:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:41:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:41:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:42:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:42:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:43:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:43:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:44:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:44:48 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:45:18 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:45:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:46:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:46:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:47:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:47:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:48:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:48:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:49:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:49:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:50:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:50:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:51:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:51:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:52:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:52:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:53:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:53:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:54:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:54:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:55:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:55:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:56:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:56:27 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3a352d79: (connection has passed maxLifetime)
+12:56:27 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@15aaad34
+12:56:33 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4e029bd6: (connection has passed maxLifetime)
+12:56:33 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@667fd6ae
+12:56:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:56:57 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6ba612cc: (connection has passed maxLifetime)
+12:56:57 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7bf350ae
+12:57:07 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@e2e3f2e: (connection has passed maxLifetime)
+12:57:07 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@f47934
+12:57:11 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7a2db813: (connection has passed maxLifetime)
+12:57:11 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@74f93356
+12:57:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:57:23 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@81910f1: (connection has passed maxLifetime)
+12:57:23 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@42ebb727
+12:57:26 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6e58537c: (connection has passed maxLifetime)
+12:57:26 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@36a4b0cf
+12:57:26 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1b503a38: (connection has passed maxLifetime)
+12:57:26 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@438a9e5d
+12:57:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:57:58 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2fb2a6b4: (connection has passed maxLifetime)
+12:57:58 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7a0417c4
+12:58:07 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6fc65cc9: (connection has passed maxLifetime)
+12:58:07 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5aebb13a
+12:58:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:58:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:59:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:59:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:00:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:00:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:01:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:01:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:02:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:02:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:03:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:03:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:04:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:04:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:05:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:05:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:06:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:06:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:07:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:07:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:08:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:08:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:09:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:09:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:10:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:10:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:11:04 DEBUG - Creating a new SqlSession
+13:11:04 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13e96d18] was not registered for synchronization because synchronization is not active
+13:11:04 DEBUG - JDBC Connection [HikariProxyConnection@1792051518 wrapping com.mysql.jdbc.JDBC4Connection@15aaad34] will not be managed by Spring
+13:11:04 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+13:11:04 DEBUG - ==> Parameters: nur723(String)
+13:11:04 DEBUG - <==      Total: 1
+13:11:04 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13e96d18]
+13:11:04 DEBUG - 登录-登录成功---username:nur723
+13:11:04 DEBUG - Creating a new SqlSession
+13:11:04 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@327cd007] was not registered for synchronization because synchronization is not active
+13:11:04 DEBUG - JDBC Connection [HikariProxyConnection@1025511745 wrapping com.mysql.jdbc.JDBC4Connection@15aaad34] will not be managed by Spring
+13:11:04 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+13:11:04 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+13:11:04 DEBUG - <==      Total: 1
+13:11:04 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@327cd007]
+13:11:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:11:25 DEBUG - Creating a new SqlSession
+13:11:25 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e95c57a] was not registered for synchronization because synchronization is not active
+13:11:25 DEBUG - JDBC Connection [HikariProxyConnection@334729844 wrapping com.mysql.jdbc.JDBC4Connection@15aaad34] will not be managed by Spring
+13:11:25 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+13:11:25 DEBUG - ==> Parameters: nur723(String)
+13:11:25 DEBUG - <==      Total: 1
+13:11:25 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e95c57a]
+13:11:25 DEBUG - 登录-登录成功---username:nur723
+13:11:25 DEBUG - Creating a new SqlSession
+13:11:25 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@193d3459] was not registered for synchronization because synchronization is not active
+13:11:25 DEBUG - JDBC Connection [HikariProxyConnection@131784824 wrapping com.mysql.jdbc.JDBC4Connection@15aaad34] will not be managed by Spring
+13:11:25 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+13:11:25 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+13:11:25 DEBUG - <==      Total: 1
+13:11:25 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@193d3459]
+13:11:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:12:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:12:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:13:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:13:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:14:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:14:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:15:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:15:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:16:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:16:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:17:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:17:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:18:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:18:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:19:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:19:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:20:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:20:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:21:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:21:26 DEBUG - Creating a new SqlSession
+13:21:26 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4126a7f8] was not registered for synchronization because synchronization is not active
+13:21:26 DEBUG - JDBC Connection [HikariProxyConnection@130289705 wrapping com.mysql.jdbc.JDBC4Connection@15aaad34] will not be managed by Spring
+13:21:26 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+13:21:26 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+13:21:26 DEBUG - <==      Total: 1
+13:21:26 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4126a7f8]
+13:21:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:22:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:22:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:23:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:23:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:24:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:24:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:25:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:25:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:25:58 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@667fd6ae: (connection has passed maxLifetime)
+13:25:58 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7a9a1066
+13:26:07 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@15aaad34: (connection has passed maxLifetime)
+13:26:07 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@73954adf
+13:26:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:26:27 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7bf350ae: (connection has passed maxLifetime)
+13:26:27 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@a923a0b
+13:26:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:26:50 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@42ebb727: (connection has passed maxLifetime)
+13:26:50 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@75a439cf
+13:26:52 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@74f93356: (connection has passed maxLifetime)
+13:26:52 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1dc4807
+13:26:53 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@f47934: (connection has passed maxLifetime)
+13:26:53 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6ba0e273
+13:27:01 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@36a4b0cf: (connection has passed maxLifetime)
+13:27:01 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@52c6035
+13:27:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:27:25 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@438a9e5d: (connection has passed maxLifetime)
+13:27:25 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@68129de3
+13:27:44 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7a0417c4: (connection has passed maxLifetime)
+13:27:44 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7490fdcb
+13:27:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:27:59 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5aebb13a: (connection has passed maxLifetime)
+13:27:59 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1979c28b
+13:28:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:28:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:29:01 DEBUG - Creating a new SqlSession
+13:29:01 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@458fe502] was not registered for synchronization because synchronization is not active
+13:29:01 DEBUG - JDBC Connection [HikariProxyConnection@1874871800 wrapping com.mysql.jdbc.JDBC4Connection@7a9a1066] will not be managed by Spring
+13:29:01 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+13:29:01 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+13:29:01 DEBUG - <==      Total: 1
+13:29:01 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@458fe502]
+13:29:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:29:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:30:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:30:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:31:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:31:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:32:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:32:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:33:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:33:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:34:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:34:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:35:07 DEBUG - Creating a new SqlSession
+13:35:07 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@441593f0] was not registered for synchronization because synchronization is not active
+13:35:07 DEBUG - JDBC Connection [HikariProxyConnection@474785735 wrapping com.mysql.jdbc.JDBC4Connection@7a9a1066] will not be managed by Spring
+13:35:07 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+13:35:07 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+13:35:07 DEBUG - <==      Total: 1
+13:35:07 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@441593f0]
+13:35:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:35:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:36:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:36:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:37:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:37:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:38:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:38:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:39:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:39:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:40:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:40:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:41:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:41:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:42:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:42:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:43:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:43:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:44:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:44:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:45:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:45:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:46:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:46:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:47:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:47:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:48:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:48:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:49:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:49:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:50:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:50:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:51:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:51:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:52:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:52:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:53:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:53:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:54:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:54:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:55:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:55:47 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@73954adf: (connection has passed maxLifetime)
+13:55:47 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@13396fec
+13:55:48 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7a9a1066: (connection has passed maxLifetime)
+13:55:48 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@67a76124
+13:55:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:55:52 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@a923a0b: (connection has passed maxLifetime)
+13:55:52 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@e21ef5a
+13:56:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:56:30 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@75a439cf: (connection has passed maxLifetime)
+13:56:30 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@23696932
+13:56:32 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6ba0e273: (connection has passed maxLifetime)
+13:56:32 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@574781b6
+13:56:48 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@52c6035: (connection has passed maxLifetime)
+13:56:48 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7ec439d2
+13:56:48 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1dc4807: (connection has passed maxLifetime)
+13:56:48 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@a37b216
+13:56:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:57:03 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7490fdcb: (connection has passed maxLifetime)
+13:57:03 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@32b3f9a7
+13:57:14 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1979c28b: (connection has passed maxLifetime)
+13:57:14 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@406b6e6a
+13:57:18 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@68129de3: (connection has passed maxLifetime)
+13:57:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34a67b8b
+13:57:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:57:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:58:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:58:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:59:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+13:59:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:00:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:00:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:01:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:01:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:02:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:02:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:03:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:03:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:04:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:04:46 DEBUG - Creating a new SqlSession
+14:04:46 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28705469] was not registered for synchronization because synchronization is not active
+14:04:46 DEBUG - JDBC Connection [HikariProxyConnection@338187257 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:04:46 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:04:46 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:04:46 DEBUG - <==      Total: 1
+14:04:46 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28705469]
+14:04:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:05:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:05:31 DEBUG - Creating a new SqlSession
+14:05:31 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27b89a59] was not registered for synchronization because synchronization is not active
+14:05:31 DEBUG - JDBC Connection [HikariProxyConnection@128333249 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:05:31 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:05:31 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:05:31 DEBUG - <==      Total: 1
+14:05:31 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27b89a59]
+14:05:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:06:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:06:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:07:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:07:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:08:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:08:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:09:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:09:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:10:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:10:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:11:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:11:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:12:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:12:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:13:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:13:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:14:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:14:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:15:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:15:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:16:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:16:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:17:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:17:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:18:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:18:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:19:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:19:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:20:05 DEBUG - Creating a new SqlSession
+14:20:05 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7619a7bb] was not registered for synchronization because synchronization is not active
+14:20:05 DEBUG - JDBC Connection [HikariProxyConnection@2140010662 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:20:05 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:20:05 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:20:05 DEBUG - <==      Total: 1
+14:20:05 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7619a7bb]
+14:20:19 DEBUG - Creating a new SqlSession
+14:20:19 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64250721] was not registered for synchronization because synchronization is not active
+14:20:19 DEBUG - JDBC Connection [HikariProxyConnection@281572666 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:20:19 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:20:19 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:20:19 DEBUG - <==      Total: 1
+14:20:19 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64250721]
+14:20:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:20:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:21:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:21:30 DEBUG - Creating a new SqlSession
+14:21:30 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ba672e4] was not registered for synchronization because synchronization is not active
+14:21:30 DEBUG - JDBC Connection [HikariProxyConnection@557523815 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:21:30 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:21:30 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:21:30 DEBUG - <==      Total: 1
+14:21:30 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ba672e4]
+14:21:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:22:18 DEBUG - Creating a new SqlSession
+14:22:18 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b438d8] was not registered for synchronization because synchronization is not active
+14:22:18 DEBUG - JDBC Connection [HikariProxyConnection@1287683834 wrapping com.mysql.jdbc.JDBC4Connection@13396fec] will not be managed by Spring
+14:22:18 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:22:18 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:22:18 DEBUG - <==      Total: 1
+14:22:18 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b438d8]
+14:22:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:22:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:23:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:23:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:24:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:24:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:25:07 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@67a76124: (connection has passed maxLifetime)
+14:25:07 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3444cbfd
+14:25:07 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@e21ef5a: (connection has passed maxLifetime)
+14:25:07 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@40fd831b
+14:25:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:25:20 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@13396fec: (connection has passed maxLifetime)
+14:25:20 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@19b2137a
+14:25:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:26:18 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@23696932: (connection has passed maxLifetime)
+14:26:18 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3d9e917a
+14:26:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:26:19 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@574781b6: (connection has passed maxLifetime)
+14:26:19 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@49ae833f
+14:26:21 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@a37b216: (connection has passed maxLifetime)
+14:26:21 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@30e9fd11
+14:26:30 DEBUG - Creating a new SqlSession
+14:26:30 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78565feb] was not registered for synchronization because synchronization is not active
+14:26:30 DEBUG - JDBC Connection [HikariProxyConnection@746472462 wrapping com.mysql.jdbc.JDBC4Connection@7ec439d2] will not be managed by Spring
+14:26:30 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:26:30 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:26:30 DEBUG - <==      Total: 1
+14:26:30 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78565feb]
+14:26:35 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@34a67b8b: (connection has passed maxLifetime)
+14:26:35 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3db73e36
+14:26:36 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7ec439d2: (connection has passed maxLifetime)
+14:26:36 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@49079df8
+14:26:44 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@406b6e6a: (connection has passed maxLifetime)
+14:26:45 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6908d01
+14:26:47 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@32b3f9a7: (connection has passed maxLifetime)
+14:26:47 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@721b353f
+14:26:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:27:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:27:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:28:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:28:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:29:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:29:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:30:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:30:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:31:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:31:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:32:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:32:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:33:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:33:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:34:10 DEBUG - Creating a new SqlSession
+14:34:10 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d93906c] was not registered for synchronization because synchronization is not active
+14:34:10 DEBUG - JDBC Connection [HikariProxyConnection@505067477 wrapping com.mysql.jdbc.JDBC4Connection@3444cbfd] will not be managed by Spring
+14:34:10 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:34:10 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:34:10 DEBUG - <==      Total: 1
+14:34:10 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d93906c]
+14:34:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:34:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:35:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:35:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:36:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:36:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:37:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:37:49 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:38:19 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:38:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:39:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:39:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:40:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:40:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:41:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:41:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:42:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:42:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:43:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:43:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:44:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:44:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:45:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:45:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:46:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:46:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:47:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:47:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:48:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:48:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:49:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:49:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:50:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:50:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:51:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:51:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:52:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:52:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:53:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:53:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:54:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:54:24 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3444cbfd: (connection has passed maxLifetime)
+14:54:24 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3abf41ad
+14:54:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:54:55 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@19b2137a: (connection has passed maxLifetime)
+14:54:55 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1f3576df
+14:55:06 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@40fd831b: (connection has passed maxLifetime)
+14:55:06 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@19279bf1
+14:55:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:55:42 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@49ae833f: (connection has passed maxLifetime)
+14:55:42 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7b029348
+14:55:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:55:52 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@30e9fd11: (connection has passed maxLifetime)
+14:55:52 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1eeee94b
+14:55:55 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3d9e917a: (connection has passed maxLifetime)
+14:55:55 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6afdbc78
+14:56:12 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3db73e36: (connection has passed maxLifetime)
+14:56:12 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1979063a
+14:56:19 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6908d01: (connection has passed maxLifetime)
+14:56:20 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@29974ea8
+14:56:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:56:20 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@721b353f: (connection has passed maxLifetime)
+14:56:20 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5db34bb2
+14:56:24 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@49079df8: (connection has passed maxLifetime)
+14:56:24 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4913a393
+14:56:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:57:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:57:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:58:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:58:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:59:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+14:59:44 DEBUG - Creating a new SqlSession
+14:59:44 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57de8c5c] was not registered for synchronization because synchronization is not active
+14:59:44 DEBUG - JDBC Connection [HikariProxyConnection@1816255843 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+14:59:44 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+14:59:44 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+14:59:44 DEBUG - <==      Total: 1
+14:59:44 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57de8c5c]
+14:59:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:00:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:00:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:01:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:01:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:02:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:02:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:03:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:03:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:04:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:04:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:05:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:05:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:06:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:06:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:07:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:07:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:08:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:08:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:09:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:09:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:10:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:10:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:11:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:11:47 DEBUG - Creating a new SqlSession
+15:11:47 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c72a08e] was not registered for synchronization because synchronization is not active
+15:11:47 DEBUG - JDBC Connection [HikariProxyConnection@889542477 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:11:47 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:11:47 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:11:47 DEBUG - <==      Total: 1
+15:11:47 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c72a08e]
+15:11:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:12:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:12:40 DEBUG - Creating a new SqlSession
+15:12:40 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5df241] was not registered for synchronization because synchronization is not active
+15:12:40 DEBUG - JDBC Connection [HikariProxyConnection@1967426140 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:12:40 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:12:40 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:12:40 DEBUG - <==      Total: 1
+15:12:40 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5df241]
+15:12:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:13:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:13:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:14:07 DEBUG - Creating a new SqlSession
+15:14:08 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f14d2b1] was not registered for synchronization because synchronization is not active
+15:14:08 DEBUG - JDBC Connection [HikariProxyConnection@1744194224 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:14:08 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:14:08 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:14:08 DEBUG - <==      Total: 1
+15:14:08 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f14d2b1]
+15:14:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:14:48 DEBUG - Creating a new SqlSession
+15:14:48 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6feb8c94] was not registered for synchronization because synchronization is not active
+15:14:48 DEBUG - JDBC Connection [HikariProxyConnection@629686149 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:14:48 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:14:48 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:14:48 DEBUG - <==      Total: 1
+15:14:48 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6feb8c94]
+15:14:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:15:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:15:42 DEBUG - Creating a new SqlSession
+15:15:42 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1683aa56] was not registered for synchronization because synchronization is not active
+15:15:42 DEBUG - JDBC Connection [HikariProxyConnection@1014659059 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:15:42 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:15:42 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:15:42 DEBUG - <==      Total: 1
+15:15:42 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1683aa56]
+15:15:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:16:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:16:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:17:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:17:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:18:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:18:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:19:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:19:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:20:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:20:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:21:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:21:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:22:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:22:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:23:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:23:49 DEBUG - Creating a new SqlSession
+15:23:49 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bcadba3] was not registered for synchronization because synchronization is not active
+15:23:49 DEBUG - JDBC Connection [HikariProxyConnection@959971169 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:23:49 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+15:23:49 DEBUG - ==> Parameters: nur723(String)
+15:23:49 DEBUG - <==      Total: 1
+15:23:49 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bcadba3]
+15:23:49 DEBUG - 登录-登录成功---username:nur723
+15:23:49 DEBUG - Creating a new SqlSession
+15:23:49 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26763d59] was not registered for synchronization because synchronization is not active
+15:23:49 DEBUG - JDBC Connection [HikariProxyConnection@397783991 wrapping com.mysql.jdbc.JDBC4Connection@3abf41ad] will not be managed by Spring
+15:23:49 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:23:49 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:23:49 DEBUG - <==      Total: 1
+15:23:49 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26763d59]
+15:23:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:24:04 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3abf41ad: (connection has passed maxLifetime)
+15:24:04 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@62ad9f3f
+15:24:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:24:28 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1f3576df: (connection has passed maxLifetime)
+15:24:28 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@20b5e8f8
+15:24:35 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@19279bf1: (connection has passed maxLifetime)
+15:24:35 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@517723b4
+15:24:37 DEBUG - Creating a new SqlSession
+15:24:37 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50cc3ed6] was not registered for synchronization because synchronization is not active
+15:24:37 DEBUG - JDBC Connection [HikariProxyConnection@1536618371 wrapping com.mysql.jdbc.JDBC4Connection@7b029348] will not be managed by Spring
+15:24:37 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+15:24:37 DEBUG - ==> Parameters: nur723(String)
+15:24:37 DEBUG - <==      Total: 1
+15:24:37 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50cc3ed6]
+15:24:37 DEBUG - 登录-登录成功---username:nur723
+15:24:37 DEBUG - Creating a new SqlSession
+15:24:37 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b158962] was not registered for synchronization because synchronization is not active
+15:24:37 DEBUG - JDBC Connection [HikariProxyConnection@174355612 wrapping com.mysql.jdbc.JDBC4Connection@7b029348] will not be managed by Spring
+15:24:37 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:24:37 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:24:37 DEBUG - <==      Total: 1
+15:24:37 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b158962]
+15:24:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:25:03 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7b029348: (connection has passed maxLifetime)
+15:25:03 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@29f68a26
+15:25:14 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6afdbc78: (connection has passed maxLifetime)
+15:25:14 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1c2e212d
+15:25:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:25:35 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1eeee94b: (connection has passed maxLifetime)
+15:25:35 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@32f36ad1
+15:25:40 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1979063a: (connection has passed maxLifetime)
+15:25:40 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@46cc13e7
+15:25:48 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@29974ea8: (connection has passed maxLifetime)
+15:25:48 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5868b62d
+15:25:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:25:52 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4913a393: (connection has passed maxLifetime)
+15:25:52 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2cbdbb17
+15:25:52 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5db34bb2: (connection has passed maxLifetime)
+15:25:52 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@17179c55
+15:25:53 DEBUG - Creating a new SqlSession
+15:25:53 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5366f46d] was not registered for synchronization because synchronization is not active
+15:25:53 DEBUG - JDBC Connection [HikariProxyConnection@523693359 wrapping com.mysql.jdbc.JDBC4Connection@62ad9f3f] will not be managed by Spring
+15:25:53 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+15:25:53 DEBUG - ==> Parameters: nur723(String)
+15:25:53 DEBUG - <==      Total: 1
+15:25:53 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5366f46d]
+15:25:53 DEBUG - 登录-登录成功---username:nur723
+15:25:53 DEBUG - Creating a new SqlSession
+15:25:53 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4583bf42] was not registered for synchronization because synchronization is not active
+15:25:53 DEBUG - JDBC Connection [HikariProxyConnection@213647788 wrapping com.mysql.jdbc.JDBC4Connection@62ad9f3f] will not be managed by Spring
+15:25:53 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:25:53 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:25:53 DEBUG - <==      Total: 1
+15:25:53 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4583bf42]
+15:26:14 DEBUG - Creating a new SqlSession
+15:26:14 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8f905c] was not registered for synchronization because synchronization is not active
+15:26:14 DEBUG - JDBC Connection [HikariProxyConnection@394590689 wrapping com.mysql.jdbc.JDBC4Connection@62ad9f3f] will not be managed by Spring
+15:26:14 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon from usertable where UserName = ? 
+15:26:14 DEBUG - ==> Parameters: nur723(String)
+15:26:14 DEBUG - <==      Total: 1
+15:26:14 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8f905c]
+15:26:14 DEBUG - 登录-登录成功---username:nur723
+15:26:14 DEBUG - Creating a new SqlSession
+15:26:14 DEBUG - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36cebfcc] was not registered for synchronization because synchronization is not active
+15:26:14 DEBUG - JDBC Connection [HikariProxyConnection@535192318 wrapping com.mysql.jdbc.JDBC4Connection@62ad9f3f] will not be managed by Spring
+15:26:14 DEBUG - ==>  Preparing: select UserID, UserName, UserPhone, UserEmail, UserPassword, UserSex, UserIcon, UserJurisdiction, UserLock, UserRegistTime, Timestamp, DeleteFlag, UserInfoJson1, UserInfoJson2, UserInfoJson3 from usertable where UserID = ? 
+15:26:14 DEBUG - ==> Parameters: 27bac170c50143ffbf8077cc37024997(String)
+15:26:14 DEBUG - <==      Total: 1
+15:26:14 DEBUG - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36cebfcc]
+15:26:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:26:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:27:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:27:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:28:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:28:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:29:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:29:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:30:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:30:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:31:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:31:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:32:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:32:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:33:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:33:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:34:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:34:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:35:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:35:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:36:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:36:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:37:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:37:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:38:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:38:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:39:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:39:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:40:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:40:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:41:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:41:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:42:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:42:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:43:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:43:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:44:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:44:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:45:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:45:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:46:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:46:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:47:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:47:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:48:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:48:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:49:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:49:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:50:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:50:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:51:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:51:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:52:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:52:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:53:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:53:40 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@62ad9f3f: (connection has passed maxLifetime)
+15:53:40 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3b8163a7
+15:53:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:54:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:54:26 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@20b5e8f8: (connection has passed maxLifetime)
+15:54:26 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@18b903b4
+15:54:29 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@517723b4: (connection has passed maxLifetime)
+15:54:29 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6cac17e0
+15:54:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:54:54 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@29f68a26: (connection has passed maxLifetime)
+15:54:54 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5b7a3a22
+15:55:08 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1c2e212d: (connection has passed maxLifetime)
+15:55:09 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@77f14852
+15:55:15 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@17179c55: (connection has passed maxLifetime)
+15:55:15 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@426ab32e
+15:55:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:55:25 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@32f36ad1: (connection has passed maxLifetime)
+15:55:25 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@fa5ceb6
+15:55:27 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@46cc13e7: (connection has passed maxLifetime)
+15:55:27 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7b275bc8
+15:55:29 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2cbdbb17: (connection has passed maxLifetime)
+15:55:29 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6d0240bf
+15:55:33 DEBUG - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5868b62d: (connection has passed maxLifetime)
+15:55:33 DEBUG - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2ec6f040
+15:55:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:56:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:56:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:57:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:57:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:58:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:58:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:59:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:59:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:00:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:00:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:01:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:01:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:02:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:02:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:03:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:03:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:04:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:04:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:05:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:05:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:06:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:06:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:07:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:07:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:08:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:08:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:09:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:09:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:10:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:10:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:11:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:11:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:12:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:12:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:13:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:13:50 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+16:14:20 DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
