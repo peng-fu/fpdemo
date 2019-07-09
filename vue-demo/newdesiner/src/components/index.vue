@@ -4,9 +4,9 @@
       <Menu active-name="1-1" width="auto">
         <MenuItem
           :name="`1-${index+1}`"
-          v-for="(leftitem ,index) in leftclassifylist"
+          v-for="(leftitem ,index) in indexcategorydata"
           :key="index"
-          @click.native="checkClassify(index)"
+          @click.native="checkClassify(leftitem.name,index)"
         >
           <span>{{leftitem.name}}</span>
         </MenuItem>
@@ -33,30 +33,30 @@
         </Carousel-item>
       </Carousel>
       <div class="rigth_content">
-        <div class="index_contentitem">
-          <p class="contentitemtitle">如何学习JavaScript？</p>
-          <p class="contentitemconent">
-            第一阶段：初识数据分析这个阶段是你学习数据分析的第一个月。核心的三本书就是：统计学、R IN ACTION、深入浅出数据分析。
-            第一星期：好好的阅读一下统计学这本教材。按照每天3个小时的时间，一个星期你至少能看完8章。踏踏实实的看完，课后习题不需要做，重点放在理解公式推导以及专业名字定义的理解上。
-            第二星期：有了统计学基础，R语言学习起来就不会太费劲。《R in action》 是公认的R语言经...
-          </p>
+        <div class="index_contentitem" v-for="(dataitem,index) in indexAllData" :key="index"  @click="jumpDetail(dataitem.blogid)">
+          <p class="contentitemtitle">{{dataitem.blogtitle}}</p>
+          <p class="contentitemconent">{{dataitem.blogsynopsis}}</p>
           <div class="contentitemauhermsg">
             <div class="authermassageleft">
               <img src="@/assets/image/img_sys19.png" alt />
-              <span class="authername">Nurdun</span>
+              <span class="authername">{{dataitem.username}}</span>
               <span class="leftbottm">|</span>
-              <span>Javascript</span>
+              <span>{{dataitem.blogcategory}}</span>
               <span class="leftbottm">|</span>
-              <span>6月10日</span>
+              <span>{{dataitem.releasetime | formateTime}}</span>
             </div>
             <div class="authermassageright">
               <span>阅读量</span>
-              <span class="numberspan">4000</span>
+              <span class="numberspan">{{dataitem.viewquantity}}</span>
               <span class="leftbottm">|</span>
               <span>评论量</span>
-              <span class="numberspan">555</span>
+              <span class="numberspan">{{dataitem.commentquantity}}</span>
             </div>
           </div>
+        </div>
+
+        <div id="indexfootpage">
+          <Page :total="indexParams.totaldata" :page-size="indexParams.pagesize"  show-total @on-change="pagination"></Page>
         </div>
       </div>
     </div>
@@ -76,16 +76,85 @@ export default {
         { name: "PHP", key: 6 },
         { name: "区块链", key: 7 }
       ], //左边分类
-      currentclassify: 0
+      currentclassify: 0,
+      indexParams:{
+        totaldata:0,
+        currentpage:1,
+        pagesize:10,
+        blogcategory:null,
+      },
+      indexAllData:[],
+      indexcategorydata:[],
     };
   },
   methods: {
-    checkClassify(index) {
-      this.currentclassify = index;
+    //点击分类
+    checkClassify(typename,index){
+      if(typename == '全部'){
+        this.indexParams.blogcategory = null
+      }else{
+        this.indexParams.blogcategory = typename
+      }
+      this.pagination(1)
+    },
+    //获取总数据
+    getIndexBlogdata(){
+      let dataobj = {
+        page:this.indexParams.currentpage,
+        size:this.indexParams.pagesize,
+        blogcategory:this.indexParams.blogcategory
+      }
+      this.$Reqpost('/blog/getblogdata',dataobj).then(res=>{
+        console.log(res)
+        if(res.code == 200){
+          this.indexAllData = res.data.datas
+          this.indexParams.totaldata = res.data.totalSize
+        }
+      }).catch(err=>{console.log(err)})
+    },
+    //跳转页面
+    jumpDetail(id){
+      let dataobj = {
+        blogid:id
+      }
+      this.$Reqpost('/blog/addviewquantity',dataobj).then(res=>{
+        if(res.code == 200){
+          localStorage.setItem('acticleid',id)
+          this.$router.push({path:'/articledetail'})
+        }
+        }).catch(err=>{
+          console.log(err)
+      })
+    },
+    //获取分类
+    getCategory(){
+      this.$Reqpost('/blog/getblogtype').then(res=>{
+        if(res.code == 200){
+          let dataArr = res.data
+          let firstobj = {}
+          firstobj.name = '全部'
+          firstobj.key = 0
+          this.indexcategorydata.push(firstobj)
+          for(let i =0;i<dataArr.length;i++){
+            let obj = {}
+            obj.name = dataArr[i]
+            obj.key = i+1
+            this.indexcategorydata.push(obj)
+          }
+        }
+      }).catch(err=>{
+          console.log(err)
+      })
+    },
+    //分页
+    pagination(page){
+      this.indexParams.currentpage = page
+      this.getIndexBlogdata()
     }
   },
   created(){
-    console.log(this.leftclassifylist)
+    this.getIndexBlogdata()
+    this.getCategory()
   }
 };
 </script>
@@ -131,6 +200,7 @@ export default {
   min-height: 433px;
   border-radius: 3px;
   box-shadow: 2px 4px 10px 0 rgba(0,0,0,.16);
+  padding-bottom: 20px;
 }
 .index_contentitem {
   padding: 20px;
@@ -139,6 +209,7 @@ export default {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid #e3e5e8;
+  cursor: pointer;
 }
 .contentitemtitle {
   font-size: 20px;
@@ -182,6 +253,11 @@ export default {
   justify-content: space-between;
 }
 .numberspan {
-  color: #2d8cf0;
+  color: #009a61;
+}
+#indexfootpage {
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 0px 0;
 }
 </style>

@@ -4,10 +4,10 @@
       <div class="tabcontent">
         <div class="tabbaer_leftdiv">
           <img src="@/assets/image/LOgo.png" alt />
-          <Menu mode="horizontal"  active-name="1">
-            <MenuItem name="1" @click.native="chencktaber('/index')">首页</MenuItem>
-            <MenuItem v-show="$store.state.userinfo.username" name="2" @click.native="chencktaber('/addarticle')">添加文章</MenuItem>
-            <MenuItem v-show="$store.state.userinfo.username" name="3" @click.native="chencktaber('/myarticles')">我的文章</MenuItem>
+          <Menu mode="horizontal"  :active-name="avticeindex">
+            <MenuItem name="1" @click.native="chencktaber('/index','1')">首页</MenuItem>
+            <MenuItem v-show="$store.state.userinfo.username" name="2" @click.native="chencktaber('/addarticle','2')">添加文章</MenuItem>
+            <MenuItem v-show="$store.state.userinfo.username" name="3" @click.native="chencktaber('/myarticles','3')">我的文章</MenuItem>
             <MenuItem name="4">技术文章</MenuItem>
             <MenuItem name="5">程序员人生</MenuItem>
             <MenuItem name="6">关于博客</MenuItem>
@@ -52,11 +52,16 @@ import { setTimeout } from 'timers';
 export default {
   data() {
     return {
+      currentopsion:this.$route.path,
     };
   },
   methods: {
-    chencktaber(pagepath) {
+    chencktaber(pagepath,index) {
+      this.currentopsion = pagepath
       this.$router.push({ path: pagepath });
+      if(pagepath == '/index' || pagepath == '/myarticles'){
+        sessionStorage.setItem('path',pagepath)
+      }
     },
     //退出登录
     Logout(){
@@ -93,8 +98,27 @@ export default {
       }
     }
   },
+  computed:{
+    avticeindex(){
+      if(this.currentopsion == '/index'){
+       return '1' 
+      }else if(this.currentopsion == '/addarticle'){
+        return '2'
+      }else if(this.currentopsion == '/myarticles'){
+        return '3'
+      }else{
+        let pathstr = sessionStorage.getItem('path')
+        if(pathstr == '/index'){
+          return '1'
+        }else if(pathstr == '/myarticles'){
+          return '3'
+        }
+      }
+    }
+  },
   created(){
     this.getUserinformation()
+    console.log(this.currentopsion)
   }
 };
 </script>

@@ -36,7 +36,7 @@
         </div>
       </div>
       <div id="footpage">
-          <Page :total="myarticleparams.totaldata" show-total @on-change="pagination"></Page>
+          <Page :total="myarticleparams.totaldata" :page-size="myarticleparams.pagesize"  show-total @on-change="pagination"></Page>
       </div>
     </div>
   </div>
@@ -73,6 +73,7 @@ export default {
         blogcategory:this.myarticleparams.blogcategory
       }
       this.$Reqpost('/blog/getmyblogdata',dataobj).then(res=>{
+        console.log(res)
             if(res.code == 200){
               this.myarticles = res.data.datas
               this.myarticleparams.totaldata = res.data.totalSize

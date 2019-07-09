@@ -56,7 +56,7 @@
       </div>
     </div>
     <div id="footpage">
-      <Page :total="commentparams.totaldata" show-total @on-change="pagination"></Page>
+      <Page :total="commentparams.totaldata" :page-size="commentparams.pagesize" show-total @on-change="pagination"></Page>
     </div>
   </div>
 </template>
@@ -69,9 +69,9 @@ export default {
       articleid: undefined,
       commentparams: {
         totaldata: 0, //总数
-        currentPage: 1, //当前页
-        pagesize: 5, //每页显示的数据
-        blogid: null //文章id
+        currentPage: 1, //
+        pagesize: 5, //
+        blogid: null //
       },
       commentdata: [] //评论内容
     };
